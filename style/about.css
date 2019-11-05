@@ -1,0 +1,100 @@
+/* For phones */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    margin: 100px 32px 0 32px;
+    max-width: 420px;
+    /* min-height: 95vh; */
+}
+
+.about .avatar {
+    width: 100%;
+    height: 100%;
+    border: 8px solid var(--bg-color-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.about h1 {
+    font-family: "Merriweather", Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+.about h1 span.cn {
+    color: inherit;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.about p {
+    font-family: 'Open sans', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+.about .social-wrap {
+    height: 32px;
+    margin-top: 32px;
+    display: flex;
+}
+
+.social-wrap .social {
+    width: 32px;
+    height: 32px;
+    margin-left: 24px;
+}
+
+.social-wrap .social:first-of-type {
+    margin: 0;
+}
+
+.social#instagram {
+    background: url(../assets/instagram.svg);
+    fill: var(--bg-color-2);
+}
+
+.social#mail {
+    background: url(../assets/mail.svg);
+}
+
+@media only screen and (min-width: 480px) {
+    /* For phone: to 768px*/
+    .about h1 {
+        font-size: 32px;
+    }
+    .about p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    .about {
+        max-width: 560px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    .about{
+        margin-top: 257px;
+        max-width: 916px;
+        display: grid;
+        grid-template-columns: 500px 360px;
+        column-gap: 64px;
+    }
+    .about .avatar{
+        width: 100%;
+        height: auto;
+    }
+}

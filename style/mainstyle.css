@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,700,700i,900i|Open+Sans:400,700&display=swap');
+html[data-theme='light'] {
+    --bg-color: #FAFAFA;
+    --bg-color-2: #fff;
+    /* text-color */
+    --text-color-primary: rgba(0, 0, 0, 0.84);
+    --text-color-secondary: rgba(0, 0, 0, 0.84);
+    --text-color-tertiary: rgba(0, 0, 0, 0.54);
+    /* link color */
+    --text-link-default: rgba(0, 0, 0, 0.3);
+    /* footer color */
+    --footer-color:#F7F7F7;
+    --frame-color: #272727;
+    --overlay-color: rgba(39, 39, 39, .95);
+    --shadow-10: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+html[data-theme='dark'] {
+    --bg-color: #121212;
+    --bg-color-2: #262626;
+    --frame-color: #181818;
+    /* text-color */
+    --text-color-primary: rgba(255, 255, 255, 1);
+    --text-color-secondary: rgba(255, 255, 255, .85);
+    --text-color-tertiary: rgba(255, 255, 255, .66);
+    /* link color */
+    --text-link-default: rgba(255, 255, 255, .3);
+    /* footer color */
+    --footer-color:#262626;
+    --overlay-color: rgba(255, 255, 255, .95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: 300ms background-color ease-in-out;
+}
+
+/* overall text */
+
+h1 {
+    font-family: "Merriweather", Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 1.25em;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    transition: 300ms color ease-in-out;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    transition: 300ms color ease-in-out;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--text-color-primary);
+    transition: 300ms color ease-in-out;
+}
+
+p, li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    transition: 300ms color ease-in-out;
+}
+
+b {
+    font-weight: bold;
+    color: var(--text-color-primary);
+}
+
+.caption {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    margin-top: 8px;
+    color: var(--text-color-secondary);
+    transition: 300ms color ease-in-out;
+}
+
+ul {
+    list-style-type: circle;
+    padding-inline-start: 20px;
+    margin: 0;
+}
+
+.quote {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.7em;
+    font-style: italic;
+    color: var(--text-color-tertiary);
+}
+
+/* text end */
+
+/* footer */
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color-tertiary);
+    text-align: center;
+    line-height: 60px;
+    margin: 240px 0 0 0;
+    width: 100%;
+    background-color: var(--footer-color);
+    transition: 300ms all ease-in-out;
+}
+
+@media only screen and (min-width: 480px) {
+    /* For phone: to 768px*/
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */
+    p, li {
+        font-size: 18px;
+    }
+    .quote {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    h1 {
+        font-size: 40px;
+    }
+}
