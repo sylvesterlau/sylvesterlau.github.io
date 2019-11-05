@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" path='project'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/mainstyle.css">
+    <link rel="stylesheet" href="../style/case_study.css">
+    <link rel="stylesheet" href="../style/navigation.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Playfair+Display:700,900&display=swap"
+        rel="stylesheet">
+    <title>Filter Bubble | Sylvester Lau</title>
+</head>
+
+
+<div class="nav"></div>
+
+<body>
+    <div class="header">
+        <h1>Filter Bubble Simulator</h1>
+        <p>An interactive explanation about how the “filter bubble” works.</p>
+        <img src="../assets/fb/header.png" class="header-img" alt="">
+        <div class="header-meta">
+            <div class="meta-item">
+                <p>Type</p>
+                <p>Side Project</p>
+            </div>
+
+            <div class="meta-item">
+                <p>Date</p>
+                <p>July 2019 - October 2019</p>
+            </div>
+            <div class="meta-item">
+                <p>Tech</p>
+                <p>D3.js</p>
+            </div>
+            <div class="meta-item">
+                <p>My Role</p>
+                <p>Designer, Developer</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="article">
+        <div class="side">
+            <div>
+                <h3>Overview</h3>
+                <h2>Visualizing the “Filter Bubble”</h2>
+            </div>
+            <div>
+                <p>This experimental project tried to explore a way to visualize the “filter bubble”, which occurs when
+                    websites
+                    use algorithms to selectively give information to us according to our preferences. </p>
+                <p>The term “filter bubble” has grown into a frequent topic these years.
+                    After being aware of it, I found that nearly every products and service we used had embed
+                    personalized
+                    algorithm, and therefore created an echo chamber for us.</p>
+                <p>I build this to get us thinking about our relationship with the online media, and suggest some ways
+                    to
+                    deal
+                    with the “bubble trouble”.</p>
+            </div>
+        </div>
+        <div class="img-text right">
+            <div class="small">
+                <img src="../assets/fb/ted-talk.jpg" alt="">
+            </div>
+            <div class="text">
+                <h2>Research</h2>
+                <p>According to Eli Pariser, the inventor of this term, those algorithms create “a unique universe of
+                    information for each of us … which fundamentally alters the way we encounter ideas and information.”
+                </p>
+                <p>First of all, I was thinking of designing a tool that helps solve this problem, maybe a news app that
+                    shows articles with different views. But after a quick browse, I found some inspiring projects with
+                    similar ideas:</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="../assets/fb/related-projects.jpg" alt="">
+        </div>
+        <div class="side">
+            <div>
+                <h3>Findings and Insights</h3>
+                <h2>The first step to burst the filter bubble is to know that it exists.</h2>
+            </div>
+            <div>
+                <p>The projects below require extensive work in data processing which needs real users and data. Another
+                    concept
+                    design couldn’t solve the problem. </p>
+                <p>But when I showed them to my friends, it always took them a while to understand the meaning. Most of
+                    them
+                    didn’t have a clear view of what a filter bubble is.</p>
+
+                <p><b>Real products require real data.</b> Designing a tool may not be a good practice.</p>
+                <p><b>We are not familiar</b> with how the “filter bubble” is affecting us, even we have heard of it.
+                </p>
+                <p><b>Explorable explanations:</b> Nicky Case’s “learning by playing” interactive games pattern seems
+                    suitable,
+                    considering I was trying to explain a complex theory and make it fun.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h3>The Goal</h3>
+            <p>So I decided to make an interactive website to visualize and explain how “filter bubble” works:</p>
+            <ul>
+                <li>It should give an introduction to this term, and show the way it formulates the content we read.
+                </li>
+                <li>And it needs to provide some takeaway suggestions on how to deal with the bubble.</li>
+            </ul>
+        </div>
+        <div class="img-text left">
+            <div>
+                <h3>Ideation</h3>
+                <h2>Writing a script</h2>
+                <p>Unlike a product design project, I started with a script from something familiar (like browsing news
+                    on the phone) to the introduction and how it changes our perception.</p>
+                <p>I conducted some test and interview, and this script is too complicated, and the transitions didn’t
+                    feel consistent. The interviewees started to describe their storyline, which gave me new
+                    inspirations.</p>
+
+            </div>
+            <div>
+                <img src="../assets/fb/script-1.jpg" alt="">
+                <img src="../assets/fb/script-2.jpg" alt="">
+                <img src="../assets/fb/script-3.jpg" alt="">
+                <img src="../assets/fb/script-4.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="img-text right">
+            <div>
+                <img src="../assets/fb/paper-based-1.jpg" alt="" class="l-img">
+                <img src="../assets/fb/paper-based-2.jpg" alt="" class="l-img">
+            </div>
+
+            <div>
+                <h3>Prototyping</h3>
+                <h2>Finding a simple metaphor</h2>
+                <p>Browsing some other explorable explanations made me realized that instead of trying to cover
+                    everything, it
+                    should illustrate the shift of one straightforward model. And I explored just the right visual model
+                    through
+                    paper-based prototype:</p>
+                <p>The squares are different types of information. If the user picks one square, it would be moved into
+                    the
+                    “click history” area at the right-bottom corner. And new pieces of information would enter the
+                    bubble to
+                    make the total number of squares stays the same.</p>
+                <p>The model was simple to understand and remember to the interviewees. And some more complicated rules
+                    could be
+                    implemented on top of it as “algorithms”. </p>
+            </div>
+        </div>
+        <div class="img-text left">
+            <div>
+                <h3>Prototyping</h3>
+                <h2>Building the simulation</h2>
+                <p>I tried to learn D3.js to make the simulation demo. D3.js is a JavaScript library for data
+                    visualization and provides force layout that I could use to make a smooth bubble chart.</p>
+                <p>The simulation was constructed from basics. It began with merely adding and removing circles which
+                    stand for
+                    information, and ended with an automatic running bubble chart.</p>
+            </div>
+            <div class="small">
+                <img src="../assets/fb/d3.png" alt="">
+                <video class="s-img" autoplay loop src="../assets/fb/simulate-2.mp4"></video>
+                <video class="s-img" autoplay loop src="../assets/fb/simulate-3.mp4"></video>
+                <video class="s-img" autoplay loop src="../assets/fb/simulate-4.mp4"></video>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Wireframe and Visual Design</h2>
+            <img src="../assets/fb/visual-design.png" alt="" class="l-img">
+            <img src="../assets/fb/all-screen.png" alt="" class="l-img">
+        </div>
+        <div class="section">
+            <h2>Final design</h2>
+            <p>Here’s the demo “Bubble Trouble”. Here’s the demo “Bubble Trouble”. Feel free to play around or <a
+                    target="_blank" href="../assets/fb/fb_demo_v7/index.html">run it on a new tab</a>.</p>
+            <div class="demo">
+                <iframe frameborder="no" src="../assets/fb/fb_demo_v7/index.html"></iframe>
+            </div>
+        </div>
+        <div class="section">
+            <h2>What I Learned</h2>
+            <p>During the process, I learned much from both the research, design & coding and works from other designer
+                and
+                students.</p>
+        </div>
+        <div class="two-text">
+            <p><b>First experimental project practice:</b> There’s a considerable difference between exploration
+                projects and product design. Transferring an idea into script and prototype is a big challenge.</p>
+            <p><b>The power of a simple concept:</b> A robust, powerful and memorable idea keeps people’s
+                attention, and it takes efforts to figure out. </p>
+            <p><b>Coding as a design skill:</b> I learned a lot about coding to achieve my goal in this project. It
+                gives me confidence and ambition to try data visualization and generative art next time.</p>
+            <p><b>It’s fun:</b> Creating something original from the ground up is exciting. But the result is also
+                very unpredictable and hard to control.</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../script/renderNav.js"></script>
+</body>
+<footer>© 2019 sylvesterlau.xyz - All rights reserved.</footer>
+
+</html>
