@@ -1,0 +1,123 @@
+{
+    "header": {
+        "title": "TimeLapse",
+        "caption": "Know yourself better through auto time tracking.",
+        "url": "./header.png",
+        "metaItems": {
+            "Type": "Side Project",
+            "Date": "Aug. - Oct. 2019",
+            "My Role": "Designer, Developer",
+            "Key Words": "Data-vis"
+        }
+    },
+    "article": [
+        {
+            "class": "h2",
+            "content": "Overview"
+        },
+        {
+            "class": "p",
+            "content": "We don’t have a precise sense of how we spend our time in a day. Reviewing time-spending is the key to develop self awareness, and give us insights related to productivity, health, distraction and work-life balance. But time-logging required extreme patience and perseverance, which is why so many people have tried logging their time and quited."
+        },
+        {
+            "class": "p",
+            "content": "TimeLapse is a side project of mine, which brings the concept using one’s personal digital devices to map out the entire daily routine of people, and get inspiring review."
+        },
+        {
+            "class": "l-img",
+            "url": "./double-diamond.png"
+        },
+        {
+            "class": "h2",
+            "content": "Inspiration: Why We Need Time-Logging?"
+        },
+        {
+            "class": "p",
+            "content": "When I first got my hands on a smart watch, I was fascinated by the interesting features: getting notifications on your wrist, unlocking your laptop, tracking your heart rate. But all of these just doesn't add up. They're not formulating a whole idea of the product."
+        },
+        {
+            "class": "p",
+            "content": "After I discuss it with my friends, I realized that we didn't know what exactly would be different if you have a smart watch. It seems that a smart watch would just be a alternative device. But one thing alerts me:"
+        },
+        {
+            "class": "p",
+            "content": "The one core feature of smart watch, which is the same for other watches, is reading time."
+        },
+        {
+            "class": "p",
+            "content": "Are we getting the full potential of a smart watch in “reading time” ? From this point of view, I reviewed the most used apps on my smart watch, and realized that I was already using it to logged and planned my schedule. With all these data, I was able to map out my daily rountine, and get the overview of past, present and future."
+        },
+        {
+            "class": "l-img",
+            "url": "./past-present-future.png"
+        },
+        {
+            "class": "h2",
+            "content": "Time-logging Research"
+        },
+        {
+            "class": "two-col",
+            "col1": [
+                {
+                    "class": "h3",
+                    "content": "The Book: Strange Life"
+                },
+                {
+                    "class":"p",
+                    "content":"When you talk about time-counting method, you can’t miss the biography of the Russian Scientist Alexander Alexandrovich Lyubishchev, who had invented and praticed time-counting with just paper and pencil for 56 years!" 
+                },
+                {
+                    "class":"p",
+                    "content":"Lyubishvhev could not achieved what he had without his time management system. He also showed us what would happend if a person have a clear understanding of his time-spending for a long period of time."
+                }
+            ],
+            "col2": [
+                {
+                    "class": "h3",
+                    "content": "The Book: Strange Life"
+                }
+            ]
+        },
+        {
+            "class":"h3",
+            "content":"Timeline experiment"
+        },
+        {
+            "class":"p",
+            "content":"I tried to apply Lyubishchev’s time-counting method, and created serval timeline of daily routine for me and some of my friends. It was clear to get a overview of different people’s behaviour and listen to themselfs explaining what they’ve done today. To record all the detail, I had to combine both auto-tracking softwares and manul note-taking."
+        },
+        {
+            "class":"l-img",
+            "url":"./timeline-experiment.png"
+        },
+        {
+            "class":"l-img",
+            "url":"./personas.png"
+        },
+        {
+            "class":"h3",
+            "content":"Insights"
+        },
+        {
+            "class": "two-col",
+            "col1": [
+                {
+                    "class": "ul",
+                    "li1": "Track Time Automatically, as many as possible.",
+                    "li2": "Display the daily routine of users in a friendly way.",
+                    "li3": "Provide further usage of time logging.",
+                    "li4": "Provide further usage of time logging."
+                }
+            ],
+            "col2": [
+                {
+                    "class": "ul",
+                    "li1": "Track Time Automatically, as many as possible.",
+                    "li2": "Display the daily routine of users in a friendly way.",
+                    "li3": "Provide further usage of time logging.",
+                    "li4": "Provide further usage of time logging."
+                }
+            ]
+        }
+    ]
+}
