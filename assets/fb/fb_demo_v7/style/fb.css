@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* color */
+
+html {
+    --purple: #7C67E3;
+    --yellow: #ECCB4C;
+    --red: #F57477;
+    --blue: #427BE6;
+    --green: #47C8BB;
+    --cerulean: #06B0EC;
+    --orange: #F88F07;
+    --l-blue: #83B8F5;
+}
+
+body {
+    width: 100%;
+    height: 720px;
+    background-image: linear-gradient(180deg, #211B5B 0%, #0B0B25 100%);
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* cover style */
+
+h1.title {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 48px;
+    color: rgba(255, 255, 255, .95);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+p.title {
+    font-family: "Open sans";
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(255, 255, 255, .95);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+button.title {
+    background: #F88F07;
+    border: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 17px 20px;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#particles {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#canvas {
+    height: 720px;
+    display: flex;
+}
+
+/* display */
+
+#display {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* phone */
+
+#display .phone {
+    width: 436px;
+    height: 690px;
+    background: #111035;
+    border: 8px solid #514D81;
+    border-bottom-style: none;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+}
+
+.phone .navBar {
+    width: 100%;
+    height: 56px;
+    color: #fff;
+    background: #111035;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.phone #screen {
+    height: 625px;
+    overflow: scroll;
+}
+
+/* news */
+
+#screen .news {
+    background: rgba(255, 255, 255, .1);
+    margin: 8px 20px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 300ms, transform 200ms;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#screen .news:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+#screen .news:active {
+    transform: scale(0.95);
+}
+
+#screen .news.active {
+    background: rgba(255, 255, 255, .5);
+}
+
+#screen .news.fade {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#screen .news.active {
+    pointer-events: none;
+    animation: blinkNews 1s infinite;
+    animation-direction: alternate;
+}
+
+.news span, .news p {
+    font-family: 'open sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/* tags */
+
+span.tag, span.new {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.tag {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 4px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.tag#firstClick {
+    margin: 0 8px;
+}
+
+span.new {
+    color: rgb(245, 116, 119);
+    background: rgba(245, 116, 119, .3);
+    margin-right: 8px;
+}
+
+.tag.tech, .innerbar.tech {
+    color: #fff;
+    background-color: var(--l-blue);
+}
+
+.tag.politics, .innerbar.politics {
+    color: #fff;
+    background: var(--purple);
+}
+
+.tag.business, .innerbar.business {
+    color: #fff;
+    background: var(--yellow);
+}
+
+.tag.health, .innerbar.health {
+    color: #fff;
+    background: var(--red);
+}
+
+.tag.entertainment, .innerbar.entertainment {
+    color: #fff;
+    background: var(--blue);
+}
+
+.tag.lifestyle, .innerbar.lifestyle {
+    color: #fff;
+    background: var(--green);
+}
+
+.tag.travel, .innerbar.travel {
+    color: #fff;
+    background: var(--cerulean);
+}
+
+.tag.sports, .innerbar.sports {
+    color: #fff;
+    background: var(--orange);
+}
+
+.innerbar {
+    cursor: pointer;
+}
+
+/* text-area */
+
+#text-area {
+    width: 500px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#text-area .text {
+    max-width: 352px;
+}
+
+.text h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, .9);
+}
+
+.text p {
+    font-family: "Open sans";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, .9);
+    margin-top: 16px;
+}
+
+.text p.spans.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text p.spans .tag {
+    margin: 0 16px 8px 0;
+}
+
+.text button {
+    background: #F88F07;
+    border: none;
+    color: white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 17px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+button.disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.tooltip {
+    background: rgba(41, 40, 73, .95);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 240px;
+    padding: 14px;
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 20px));
+}
+
+#bar.tooltip {
+    transform: translate(0, calc(-100% - 8px));
+}
+
+span#percent {
+    font-family: "Open sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, .9);
+    margin-left: 8px;
+}
+
+.tooltip p, .tooltip span {
+    font-family: "Open sans";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, .9);
+}
+
+/* bubble style */
+
+circle.bubble {
+    fill: rgba(0, 0, 0, 0.4)
+}
+
+.node {
+    cursor: pointer;
+}
+
+circle.politics {
+    fill: var(--purple);
+}
+
+circle.lifestyle {
+    fill: var(--green);
+}
+
+circle.business {
+    fill: var(--yellow);
+}
+
+circle.travel {
+    fill: var(--cerulean);
+}
+
+circle.tech {
+    fill: var(--l-blue);
+}
+
+circle.health {
+    fill: var(--red);
+}
+
+circle.sports {
+    fill: var(--orange);
+}
+
+circle.entertainment {
+    fill: var(--blue);
+}
+
+.bubbleNum {
+    max-width: 240px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.bubbleNum p {
+    font-family: "Open sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 2px;
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* preference bar */
+
+.preference {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 12px;
+    margin: auto;
+    position: absolute;
+    top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preference p {
+    font-family: "Open sans";
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 2px;
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+}
+
+.preference div.bar {
+    margin-top: 10px;
+    height: 14px;
+    width: 400px;
+    background: rgba(41, 40, 73, .95);
+    display: flex;
+}
+
+.preference .innerbar {
+    height: 14px;
+    width: 100px;
+}
+
+.large {
+    width: 611px;
+    height: 640px;
+}
+
+/* 说明文字加粗 */
+
+.bold {
+    font-weight: bold;
+}
+
+.bold.politics {
+    color: var(--purple);
+}
+
+.bold.lifestyle {
+    color: var(--green);
+}
+
+.bold.business {
+    color: var(--yellow);
+}
+
+.bold.travel {
+    color: var(--cerulean);
+}
+
+.bold.tech {
+    color: var(--l-blue);
+}
+
+.bold.health {
+    color: var(--red);
+}
+
+.bold.sports {
+    color: var(--orange);
+}
+
+.bold.entertainment {
+    color: var(--blue);
+}
+
+/* 动画 */
+
+@keyframes blinkNews {
+    0% {
+        background: rgba(255, 255, 255, .0);
+    }
+    100% {
+        background: rgba(255, 255, 255, .3);
+    }
+}
+
+/* rules window style */
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(31, 30, 38, .7);
+    position: fixed;
+    z-index: 10;
+    overflow: scroll;
+}
+
+.help {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: url(../img/help.svg);
+    position: fixed;
+    z-index: 11;
+    right: 56px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.close {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: url(../img/close.svg);
+    position: fixed;
+    z-index: 11;
+    right: 56px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.dialog {
+    margin: auto;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    width: 640px;
+    background: #343156;
+    border-radius: 32px;
+    z-index: 11;
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 64px;
+}
+
+.dialog h1 {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+.dialog p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #FFFFFF;
+    grid-column: 2/ span 1;
+}
+
+.dialog img {
+    width: 320px;
+    grid-column: 1/ span 1;
+}

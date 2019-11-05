@@ -1,0 +1,71 @@
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(31, 30, 38, .7);
+    position: fixed;
+    z-index: 10;
+    overflow: scroll;
+}
+
+.help{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: url(../img/help.svg);
+    position: fixed;
+    z-index: 11;
+    right: 56px;
+    bottom: 100px;
+    cursor: pointer;
+}
+.close{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: url(../img/close.svg);
+    position: fixed;
+    z-index: 11;
+    right: 56px;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.dialog {
+    margin: auto;
+    margin-top: 72px;
+    margin-bottom: 72px;
+    width: 640px;
+    background: #343156;
+    border-radius: 32px;
+    z-index: 11;
+    padding: 40px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 64px;
+}
+
+.dialog h1 {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+.dialog p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #FFFFFF;
+    grid-column: 2/ span 1;
+}
+
+.dialog img {
+    width: 320px;
+    grid-column: 1/ span 1;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #171539;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.content {
+    width: 800px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+h2, ul, p {
+    width: 723px;
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #F88F07;
+}
+
+.header h1{
+    position: absolute;
+    top: 140px;
+}
+
+.header button{
+    position: absolute;
+    top: 220px;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    color: #F88F07;
+    margin-top: 60px;
+}
+
+p, li {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, .9);
+    margin-top: 24px;
+    letter-spacing: 0.6px;
+}
+
+p a, li a {
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    border-bottom: 1.5px solid rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+p a:hover, li a:hover {
+    color: rgb(248, 143, 7);
+    border-bottom: 1.5px solid rgba(248, 143, 7, .7)
+}
+
+li i {
+    font-style: italic;
+    color: rgba(255, 255, 255, .5);
+}
+
+button {
+    background: #F88F07;
+    border: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 17px 20px;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#particles {
+    width: 100%;
+    height: inherit;
+}

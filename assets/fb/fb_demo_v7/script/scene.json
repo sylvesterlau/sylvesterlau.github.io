@@ -1,0 +1,411 @@
+{
+    "scene_1_1": [
+        {
+            "tag": "h1",
+            "text": "Browse News 1-1"
+        },
+        {
+            "tag": "p",
+            "text": "👈🏻Try to click the news that you feel like reading."
+        },
+        {
+            "tag": "p",
+            "text": "Could you predict which type of new informations is going to show next time?"
+        },
+        {
+            "tag": "p",
+            "text": "Tips: it's related to your browse history."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Show me the pattern"
+        }
+    ],
+    "scene_1_2": [
+        {
+            "tag": "h1",
+            "text": "Here’s the pattern 1-2"
+        },
+        {
+            "tag": "p",
+            "text": "There’re several types of news here:"
+        },
+        {
+            "tag": "spans",
+            "class": "spans flex",
+            "text": [
+                {
+                    "class": "tag politics",
+                    "text": "Politics"
+                },
+                {
+                    "class": "tag entertainment",
+                    "text": "Entertainment"
+                },
+                {
+                    "class": "tag travel",
+                    "text": "Travel"
+                },
+                {
+                    "class": "tag lifestyle",
+                    "text": "Lifestyle"
+                },
+                {
+                    "class": "tag health",
+                    "text": "Health"
+                },
+                {
+                    "class": "tag business",
+                    "text": "Business"
+                },
+                {
+                    "class": "tag sports",
+                    "text": "Sports"
+                },
+                {
+                    "class": "tag tech",
+                    "text": "Tech"
+                }
+            ]
+        },
+        {
+            "tag": "p",
+            "text": "Step 1. "
+        },
+        {
+            "tag": "spans",
+            "class": "spans",
+            "text": [
+                {
+                    "class": "",
+                    "text": "When you clicked the first news (in this time,"
+                },
+                {
+                    "class": "tag",
+                    "id": "firstClick",
+                    "text": "First click"
+                },
+                {
+                    "class": "",
+                    "text": "news), this news was marked read. the Bubble News will remember it."
+                }
+            ]
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "And then?"
+        }
+    ],
+    "scene_1_3": [
+        {
+            "tag": "h1",
+            "text": "Here’s the pattern 1-3"
+        },
+        {
+            "tag": "p",
+            "text": "Step 2."
+        },
+        {
+            "tag": "p",
+            "text": "Then the Bubble News would randomly reduce one news of other type."
+        },
+        {
+            "tag": "spans",
+            "class": "spans",
+            "text": [
+                {
+                    "class": "",
+                    "text": "In this time, it’s "
+                },
+                {
+                    "class": "tag",
+                    "id": "firstClick",
+                    "text": "First click"
+                },
+                {
+                    "class": "",
+                    "text": "news."
+                }
+            ]
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Continue"
+        }
+    ],
+    "scene_1_4": [
+        {
+            "tag": "h1",
+            "text": "Here’s the pattern 1-3"
+        },
+        {
+            "tag": "spans",
+            "class": "spans",
+            "text": [
+                {
+                    "class": "",
+                    "text": "And two more"
+                },
+                {
+                    "class": "tag",
+                    "id": "firstClick",
+                    "text": "First click"
+                },
+                {
+                    "class": "",
+                    "text": "news would appear in your news feed, since you seems more interesrted in them."
+                }
+            ]
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Continue"
+        }
+    ],
+    "scene_1_5": [
+        {
+            "tag": "h1",
+            "text": "A simple personalized algorithm"
+        },
+        {
+            "tag": "p",
+            "text": "What you’ve seen here is a over-simplified model of personalized algorithm: it increase things you may clicked, liked or shared, and reduce other information, which would probably trapped us in a “filter bubble”."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "See the bubble"
+        }
+    ],
+    "scene_2_1": [
+        {
+            "tag": "h1",
+            "text": "The filter bubble"
+        },
+        {
+            "tag": "p",
+            "text": "Let’s draw a bubble view to tell you more about it."
+        },
+        {
+            "tag": "p",
+            "text": "The dots inside the bubble are what you cas see on the screen."
+        },
+        {
+            "tag": "p",
+            "text": "👈🏻Hover your mouse on the little dots to see the information"
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Continue"
+        }
+    ],
+    "scene_2_2": [
+        {
+            "tag": "h1",
+            "text": "Click the dots!"
+        },
+        {
+            "tag": "p",
+            "text": "Time to make them move."
+        },
+        {
+            "tag": "p",
+            "text": "👈🏻Click the dots and see how the dots move in and out."
+        },
+        {
+            "tag": "p",
+            "text": "The same algorithm pattern is used here. Feel free to click the question mark in the corner if you miss it."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Continue"
+        }
+    ],
+    "scene_3_1": [
+        {
+            "tag": "h1",
+            "text": "Your preferrences"
+        },
+        {
+            "tag": "p",
+            "text": "The proportion is based on your previous clicking history so far. "
+        },
+        {
+            "tag": "p",
+            "text": "👈🏻Click each type to adjust your preferrences, and we’ll use them to simulate your click."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Looking good"
+        }
+    ],
+    "scene_4_1": [
+        {
+            "tag": "h1",
+            "text": "100 clicks"
+        },
+        {
+            "tag": "p",
+            "text": "The influence of filter bubble reveals when time goes by. Now let’s simulate the clicking behaviour for 100 times."
+        },
+        {
+            "tag": "p",
+            "text": "Ready?"
+        },
+        {
+            "tag": "button",
+            "id": "simulate",
+            "text": "Run 100 Times"
+        }
+    ],
+    "scene_4_2": [
+        {
+            "tag": "h1",
+            "text": "Echo chamber"
+        },
+        {
+            "tag": "p",
+            "text": "The more we see, the more we love. The major type of information in your bubble would increase its own preference."
+        },
+        {
+            "tag": "p",
+            "text": "*This is mere-exposure effect."
+        }
+    ],
+    "scene_4_3": [
+        {
+            "tag": "h1",
+            "text": "Echo chamber"
+        },
+        {
+            "tag": "p",
+            "text": "The number of <span id='mostType'></span> news raise <span id='numUp'></span>, and your preference to <span id='mostType'></span> raise <span id='preferenceUp'></span>."
+        },
+        {
+            "tag":"p",
+            "text":"Just like living in an echo chamber, your preferences and ideas keep repeating and emphasizing themselves, and sometimes cheats your mind that the bubble is the truth."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "How to burst the bubble?"
+        }
+    ],
+    "scene_5_1": [
+        {
+            "tag": "large",
+            "url": "./img/5-1.png"
+        },
+        {
+            "tag": "h1",
+            "text": "1. Be aware of the bubble"
+        },
+        {
+            "tag": "p",
+            "text": "The first thing to burst the filter bubble is to know that it exists all the time. Next time when you using Google or playing with social media, remember that there’s some rules controlling what you see."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Next"
+        }
+    ],
+    "scene_5_2": [
+        {
+            "tag": "large",
+            "url": "./img/5-2.png"
+        },
+        {
+            "tag": "h1",
+            "text": "2. Stay anonymous"
+        },
+        {
+            "tag": "p",
+            "text": "Turn off the tracking option on some websites, or use anonymous search engine like DuckDuckGo would help reduce influence of algorithms."
+        },
+        {
+            "tag":"p",
+            "text":"It’s like deactivate the rules for a while."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Next"
+        }
+    ],
+    "scene_5_3": [
+        {
+            "tag": "large",
+            "url": "./img/5-3.png"
+        },
+        {
+            "tag": "h1",
+            "text": "3. Add more “noise” to your bubble"
+        },
+        {
+            "tag": "p",
+            "text": "Try to explore something new, step out of your comfort zone, exchange ideas with someone holds different opinions. Get more “noise” to your bubble is the most effective way the burst it."
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "Next"
+        }
+    ],
+    "scene_5_4": [
+        {
+            "tag": "large",
+            "url": "./img/5-4.png"
+        },
+        {
+            "tag": "h1",
+            "text": "Take control of your information universe"
+        },
+        {
+            "tag": "p",
+            "text": "Personalized algorithm provides convenience and we should be grateful for that. But we should be the one who takes control of what we read, right?"
+        },
+        {
+            "tag": "button",
+            "id": "next",
+            "text": "That's All!"
+        }
+    ],
+    "rules": [
+        {
+            "tag": "h1",
+            "text": "Rules"
+        },
+        {
+            "tag": "img",
+            "url": "./img/rules_types.png"
+        },
+        {
+            "tag": "p",
+            "text": "Step 1: Click<br>When you clicked the first news (for example, lifestyle news),this news was marked read. the Bubble News will remember it."
+        },
+        {
+            "tag": "img",
+            "url": "./img/rules_reduce.png"
+        },
+        {
+            "tag": "p",
+            "text": "Step 2: Remove<br>One random news other than lifestyle would be removed."
+        },
+        {
+            "tag": "img",
+            "url": "./img/rules_increase.png"
+        },
+        {
+            "tag": "p",
+            "text": "Step 3: Add<br>Two more lifestyle news would move into the bubble."
+        }
+    ]
+}
