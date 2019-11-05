@@ -1,0 +1,338 @@
+{
+    "politics":[
+        {
+            "tag": "politics",
+            "title": "Politics news 1"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 2"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 3"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 4"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 5"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 6"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 7"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 8"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 9"
+        },
+        {
+            "tag": "politics",
+            "title": "Politics news 10"
+        }
+    ],
+    "business":[
+        {
+            "tag": "business",
+            "title": "Business news title 1"
+        },
+        {
+            "tag": "business",
+            "title": "Revealed: The Cheapest Airfares Since 2013"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 3"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 4"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 5"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 6"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 7"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 8"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 9"
+        },
+        {
+            "tag": "business",
+            "title": "Business news title 10"
+        }
+    ],
+    "health":[
+        {
+            "tag": "health",
+            "title": "Health news title 1"
+        },
+        {
+            "tag":"health",
+            "title":"Severe obesity among 10 and 11-year-olds hits all-time high"
+        },
+        {
+            "tag": "health",
+            "title": "Vox Writer Wants To Feed People Impacted by Natural Disasters"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 4"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 5"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 6"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 7"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 8"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 9"
+        },
+        {
+            "tag": "health",
+            "title": "Health news title 10"
+        }
+    ],
+    "entertainment":[
+        {
+            "tag": "entertainment",
+            "title": "Taylor Swift Says She’s ‘Decided to Retire’"
+        },
+        {
+            "tag": "entertainment",
+            "title": "Ryan Reynolds and Blake Lively Share First Photo With Their Baby Girl"
+        },
+        {
+            "tag": "entertainment",
+            "title": "'Last Christmas' Stars Henry Golding and Emilia Clarke Spill the Secrets From the Set (Exclusive)"
+        },
+        {
+            "tag": "entertainment",
+            "title": "'The Masked Singer' Week 4: Thingamajig Makes the Panel Cry, Skeleton Gets the Axe & Huge New Clues Revealed!"
+        },
+        {
+            "tag": "entertainment",
+            "title": "Miley Cyrus and Cody Simpson Show Off New Tattoos on Instagram"
+        },
+        {
+            "tag": "entertainment",
+            "title": "Hulu New Releases: Movies And TV Shows Streaming In November 2019"
+        },
+        {
+            "tag": "entertainment",
+            "title": "The 12 Best Easter Eggs From Avengers: Endgame"
+        },
+        {
+            "tag": "entertainment",
+            "title": "Star Wars: The Rise Of Skywalker Star Naomi Ackie Reveals New Character Details For Jannah"
+        },
+        {
+            "tag": "entertainment",
+            "title": "Zombieland: Double Tap's Emma Stone Wanted A Hilarious Walking Dead Crossover In The Sequel"
+        },
+        {
+            "tag": "entertainment",
+            "title": "What Daniel Radcliffe Would Look Like As Wolverine?"
+        }
+    ],
+    "lifestyle":[
+        {
+            "tag": "lifestyle",
+            "title": "Lifestyle news title 1"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "Creative ideas for sliding barn doors you need to try"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "So what exactly is semi gloss paint, anyway?"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "How to refinish your kitchen cabinets so they look brand new"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "H&M's Halloween Section Is Filled With So Many Treats, You'll Think You've Been Tricked"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "The best men's hair trends of 2019: 8 ways to majorly upgrade your style"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "Huda Kattan's 7 tips for unplugging"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "Climate anxiety groups are the new self-care"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "Decluttering books are cluttering our bookshelves"
+        },
+        {
+            "tag": "lifestyle",
+            "title": "23 rude things you didn’t realize you’re doing every day"
+        }
+    ],
+    "travel":[
+        {
+            "tag": "travel",
+            "title": "Empire State Building observatory reopens with new 360-degree view"
+        },
+        {
+            "tag": "travel",
+            "title": "Now’s the Time to Book Flights to Hawaii"
+        },
+        {
+            "tag": "travel",
+            "title": "Disney World hotels extend park, FastPass perks through 2020"
+        },
+        {
+            "tag": "travel",
+            "title": "18 places around the world that are being ruined by tourism"
+        },
+        {
+            "tag": "travel",
+            "title": "Abu Dhabi's Etihad sets up low-cost airline with Air Arabia"
+        },
+        {
+            "tag": "travel",
+            "title": "A travel company is hiring luxury home reviewer for $2,500 per week"
+        },
+        {
+            "tag": "travel",
+            "title": "A hotel inside the Palace of Versailles in France is opening next spring"
+        },
+        {
+            "tag": "travel",
+            "title": "Czech Republic's 'Church of Bones' to ban selfies"
+        },
+        {
+            "tag": "travel",
+            "title": "How airlines are offsetting their own carbon footprint"
+        },
+        {
+            "tag": "travel",
+            "title": "NYC’s 'City of Women' map renames subway stops for female figures"
+        }
+    ],
+    "sports":[
+        {
+            "tag": "sports",
+            "title": "Conor McGregor, Frankie Edgar call on Dana White to make UFC fight happen"
+        },
+        {
+            "tag": "sports",
+            "title": "Women are having a greater impact on NBA than ever before"
+        },
+        {
+            "tag": "sports",
+            "title": "Girardi out, Brosius in as US manager for Olympic qualifiers"
+        },
+        {
+            "tag": "sports",
+            "title": "Bottas not giving up on title, but needs to be 'very lucky' to catch Hamilton"
+        },
+        {
+            "tag": "sports",
+            "title": "5-star recruit Scottie Barnes commits to Florida State"
+        },
+        {
+            "tag": "sports",
+            "title": "Sports news 6"
+        },
+        {
+            "tag": "sports",
+            "title": "Sports news 7"
+        },
+        {
+            "tag": "sports",
+            "title": "Sports news 8"
+        },
+        {
+            "tag": "sports",
+            "title": "The last time Washington’s baseball team advanced to the World Series"
+        },
+        {
+            "tag": "sports",
+            "title": "Bradley Beal, Wizards agree to 2-year, $72M max extension"
+        }
+    ],
+    "tech":[
+        {
+            "tag": "tech",
+            "title": "Google is launching 'the first invisible phone ever'"
+        },
+        {
+            "tag": "tech",
+            "title": "Pixel Buds 2 hands-on: Google takes on the AirPods"
+        },
+        {
+            "tag": "tech",
+            "title": "Phone-based VR is officially over"
+        },
+        {
+            "tag": "tech",
+            "title": "Apple’s iOS 13 is running on 50 percent of all iPhones after three weeks"
+        },
+        {
+            "tag": "tech",
+            "title": "Yahoo will delete all Yahoo Groups content on December 14th"
+        },
+        {
+            "tag": "tech",
+            "title": "Mark Zuckerberg is delivering a free speech manifesto tomorrow"
+        },
+        {
+            "tag": "tech",
+            "title": "Skydio has a motorized charging box to make its self-flying drone truly autonomous"
+        },
+        {
+            "tag": "tech",
+            "title": "Nest is getting ready for the smart home’s Cambridge Analytica moment"
+        },
+        {
+            "tag": "tech",
+            "title": "Bose is now visiting customers at home to figure out QC35II noise cancellation problems"
+        },
+        {
+            "tag": "tech",
+            "title": "A new filter bubble game by Sylvester Lau just launched!"
+        }
+    ]
+}

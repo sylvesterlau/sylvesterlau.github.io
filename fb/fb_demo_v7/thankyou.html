@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style/thankyou.css">
+    <title>Thanks for playing!</title>
+</head>
+
+<body>
+    <div class="header">
+        <!-- partial:index.partial.html -->
+        <div id="particles"></div>
+        <h1>🎉 Thanks for playing! 🎉</h1>
+        <button class='title' onclick="playAgain()">Play Again</button>
+    </div>
+    <div class="content">
+        <p>Thanks for your time and patience!</p>
+        <p>This is a side project of mine to help you understand the “filter bubble”.
+            I build it with <a href="https://www.figma.com">Figma</a> and <a href="https://d3js.org">d3.js</a> and try
+            to learn some
+            coding along the way.</p>
+        <p>Below are some references. Thanks to all the writers and designers who created them. And thanks to
+            <a>Sun</a>
+            and <a href="https://dribbble.com/JerryyyChan">Chan</a>
+            , who gave me some fantastic ideas.</p>
+        <p>I hope you enjoy it!</p>
+        <p>@<a href="http://sylvesterlau.xyz">sylvester.lau</a></p>
+        <h2>References</h2>
+        <ul>
+            <li><a href="https://youtu.be/B8ofWFx525s">🎬Beaware online “filter bubbles”<a></a><i> - Ted Talk by Elis
+                        Pariser</i></li>
+            <li><a href="https://books.google.com/books/about/The_Filter_Bubble.html?id=-FWO0puw3nYC">📖The Filter
+                    Bubble: What the Internet is Hiding From</a><i> - Book by Elis Pariser</i></li>
+            <li><a
+                    href="https://www.notion.so/Filter-Bubble-1d65d222e94c4bf08aba1771bce7ef4a#5f3c8f10036b4f25850ab1db822b8b45">📄How
+                    Filter Bubbles Distort Reality: Everything You Need to Know</a><i> - by Farnam Street</i></li>
+            <li><a href="https://explorabl.es">👾Explorable explanation</a><i> - by Nicky Case</i></li>
+        </ul>
+        <h2>Tools</h2>
+        <ul>
+            <li><a href="https://www.figma.com">‍🎨Figma</a><i> - for design</i></li>
+            <li><a href="https://d3js.org">‍💻D3.js</a><i> - for creating the force-simulation bubble chart</i></li>
+            <li><a href="https://vincentgarreau.com/particles.js/">‍💻‍‍‍‍Particles.js</a><i> - for creating
+                    particles background</i></li>
+            <li><a href="https://iconsvg.xyz">‍💻ICONSVG</a><i> - icons by @gaddafirusli</i></li>
+        </ul>
+    </div>
+
+
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script id="cover" src="./script/cover.js"></script>
+    <script>
+        function playAgain() { window.location = './index.html' }
+    </script>
+</body>
+
+</html>
