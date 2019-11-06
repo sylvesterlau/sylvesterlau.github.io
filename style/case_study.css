@@ -82,6 +82,9 @@ body {
     line-height: 150%;
     margin-top: 1em;
 }
+.article li{
+    margin-top: 1em;
+}
 
 .article p a {
     color: inherit;
@@ -276,6 +279,10 @@ img, video {
 }
 
 @media only screen and (min-width: 1200px) {
+    .header-meta {
+        margin-top: 96px;
+        grid-template-columns: repeat(4, 1fr);
+    }
     .article {
         max-width: 1200px;
     }
@@ -286,24 +293,33 @@ img, video {
         font-size: 18px;
     }
     .section {
-        /* padding: 0 72px; */
-        margin-top: 96px;
+        margin-top: 192px;
     }
     .section h2, .section h3, .section p, .section ul {
-        margin-left: 72px;
-        margin-right: 72px;
+        margin-left: 96px;
+        margin-right: 96px;
         max-width: 696px;
     }
     .img-text {
+        margin-top: 192px;
         column-gap: 80px;
+    }
+    .img-text.device{
+        margin-left: 96px;
+        margin-right: 96px;
     }
     .side {
-        padding: 0 72px;
+        margin-top: 192px;
+        padding: 0 96px;
         column-gap: 80px;
     }
+    .quote {
+        margin-top: 192px;
+    }
     .two-text {
-        padding: 0 72px;
-        column-gap: 80px;
+        margin-top: 72px;
+        padding: 0 96px;
+        column-gap: 96px;
     }
     .demo{
         height: auto;
@@ -313,5 +329,5 @@ img, video {
         transform: none;
         width: 100%;
         position: static;
-    }
+    } 
 }

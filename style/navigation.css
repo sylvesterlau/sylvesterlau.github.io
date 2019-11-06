@@ -198,7 +198,7 @@ a.nav-item.current {
 @media only screen and (min-width: 768px) {
   /* For tablet: */
   .nav {
-    height: 80px;
+    height: 72px;
     width: 100vw;
     border-radius: 0;
     display: flex;
