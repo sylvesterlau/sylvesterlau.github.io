@@ -1,62 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" path="work">
+<html lang="en" path="home">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./style/mainstyle.css">
+    <!-- site icon -->
+    <link rel="icon" href="/assets/fav-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="/assets/fav-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/assets/fav-icon.png" />
+    <!-- title -->
+    <title>Sylvester Lau - Product Designer</title>
+    <meta name="og:title" content="Sylvester Lau" />
+    <!-- description -->
+    <meta name="description" content="Product Designer from Guangzhou China" />
+    <meta name="og:description" content="Product Designer from Guangzhou China" />
+    <!-- url -->
+    <meta name="url" content="http://www.sylvesterlau.xyz">
+    <meta name="og:url" content="http://www.sylvesterlau.xyz">
+    <!-- style -->
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
+    <link rel="stylesheet" href="./style/style_guide.css">
     <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="./style/navigation.css">
-    <title>Sylvester Lau | Product Designer</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./style/nav.css">
 </head>
 
-
-
 <body>
-    <div class="nav"></div>
-    <div class="intro">
-        <h1 class="thin">Hey there,</h1>
-        <h1>I’m Sylvester Lau.</h1>
-        <p>A product designer from Guangzhou, China. More <a href="./about.html">about me</a>.</p>
+    <nav></nav>
+    <div class="intro" id="intro">
+        <div class="avatar"></div>
+        <h1>Hey there, I’m <br>
+            <strong>Sylvester Lau.</strong>
+            <br>a product designer from Guangzhou, China.
+        </h1>
+        <p class="scroll-hint" href="#work"><span class="arrow">↓</span> See my work </p>
     </div>
-    
-    <h2 class="subtitle">Selected Projects</h2>
-    <div class="gallery">
-        <div class="column">
-                <a class="work-cover" href="./work/filter-bubble.html">
-                    <img src="./assets/work-cover/fb.jpg" width="100%">
-                    <h3>Filter Bubble Simulator</h3>
-                    <p>An interactive explanation about how the “filter bubble” works.</p>
-                </a>
-            
-            <a class="work-cover" href="./work/refuel.html">
-                <img src="./assets/work-cover/refuel.jpg" width="100%">
-                <h3>Refuel E-learning</h3>
-                <p>A playful way to do micro-learning, in just a swipe.</p>
-            </a>
-        </div>
-        <div class="column">
-                <div class="work-cover" href="./work/kf-order.html">
-                    <img src="./assets/work-cover/kf-order.jpg" width="100%">
-                    <h3>Kungfu Order</h3>
-                    <p>Helping a traditional Chinese chain resturant embrace digitalization.</p>
-                </div>
-            <a class="work-cover" href="./work/timelapse.html">
-                <img src="./assets/work-cover/timelapse.jpg" width="100%">
-                <h3>TimeLapse</h3>
-                <p>The quantified-self hub with auto time-tracking.</p>
-            </a>
+    <div id="work">
+        <div class="space"></div>
+        <div class="gallery"></div>
+    </div>
+    <div id="about">
+        <img src="./assets/me.jpg" alt="" class="me">
+        <div>
+            <h3>Call me Sylvester Lau or <span class="cn">刘劲松</span></h3>
+            <p>I’m a product designer with 2+ years experience. I manily focus on crafting digital experience and
+                interaction, and try to make the idea become an actual product.
+
+                When I’m not working, I am also a big fan of typography and a ☕️coffeeholic.</p>
+            <div class="social">
+                <a class="socicon-instagram" href="https://www.instagram.com/soyeah.real/" target="_blank"></a>
+                <a class="socicon-mail" href="mailto:justsoyeah@gmail.com" target="_blank"></a>
+                <a class="socicon-linkedin" href="https://www.linkedin.com/in/劲松-刘-374b76119/" target="_blank"></a>
+            </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./script/renderNav.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script/render_nav.js"></script>
     <script src="./script/home.js"></script>
 
 </body>
