@@ -1,24 +1,38 @@
 $(document).ready(function () {
-    $('body').children('.intro').animate({ opacity: '1' }, 500)
-    setTimeout(() => {
-        $('body').children('.gallery').animate({ opacity: '1' }, 500)
-    }, 200);
-
-    //hover effect
-    // $('.work-cover').mouseenter(function () {
-    //     $(this).children('img').addClass('active')
-    // }).mouseleave(function () {
-    //     $(this).children('img').removeClass('active')
-    // })
-
-    //click cover
-    $('div.work-cover').click(function () {
-        var link = $(this).attr('href')
-        $('body').children('.intro').animate({ opacity: '0' }, 300)
-        $('body').children('.gallery').animate({ opacity: '0' }, 300)
-        setTimeout(() => {
-            window.location = link;
-        }, 300);
-        
+    $.getJSON('./content/home.json', function (data) {
+        $.each(data.projects, function () { renderWork(this) });
+    })
+    //scroll hint
+    $('.scroll-hint').click(function(){
+        smoothScrollTo('#work')
     })
 })
+
+function renderWork(a) {
+    var img = $('<img/>').attr('src', a.img),
+        video = $('<video loop playsinline preload/>').attr('src', a.video),
+        wrap = $('<div/>').addClass('img-wrap')
+            .append(img).append(video)
+            
+        arrow = '<span> →</span>',
+        title = $('<h3/>').append(a.title + arrow),
+        caption = $('<p/>').text(a.caption);
+    var workCover = $('<a/>').addClass('work')
+        .attr('href', a.href)
+        .append(wrap)
+        .append(title)
+        .append(caption)
+        .hover(function () { play(this) }, function () { stop(this) })
+    $('.gallery').append(workCover);
+}
+
+function play(a) {
+    var video = $(a).children('.img-wrap').children('video').get(0);
+    video.play();
+}
+function stop(a) {
+    var video = $(a).children('.img-wrap').children('video').get(0);
+    video.pause();
+    video.currentTime = 0;
+}
+
