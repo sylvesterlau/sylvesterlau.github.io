@@ -1,0 +1,194 @@
+/* fonts import */
+
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700i&display=swap');
+/* colors */
+
+html[data-theme='light'] {
+    --bg-color: #fff;
+    --bg-color-2: #F8F8F9;
+    --text-color-primary: rgba(0, 0, 0, 0.95);
+    --text-color-secondary: rgba(0, 0, 0, 0.45);
+    --text-color-tertiary: rgba(0, 0, 0, 0.3);
+    --text-color-p: rgba(0, 0, 0, 0.8);
+    --text-link-default: rgba(0, 0, 0, 0.3);
+    /* link color */
+}
+
+html[data-theme='dark'] {
+    --bg-color: #121212;
+    --bg-color-2: #262626;
+    --text-color-primary: rgba(255, 255, 255, .9);
+    --text-color-secondary: rgba(255, 255, 255, .55);
+    --text-color-tertiary: rgba(255, 255, 255, 0.4);
+    --text-color-p: rgba(255, 255, 255, .75);
+    --text-link-default: rgba(255, 255, 255, .3);
+    /* link color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out ;
+}
+
+section.dark {
+    --bg-color: #121212;
+    --bg-color-2: #262626;
+    --text-color-primary: rgba(255, 255, 255, 1);
+    --text-color-secondary: rgba(255, 255, 255, .6);
+    --text-color-p: rgba(255, 255, 255, .75);
+    --text-link-default: rgba(255, 255, 255, .3);
+}
+
+/* footer */
+
+footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color-tertiary);
+    text-align: center;
+    line-height: 72px;
+    width: 100%;
+    /* margin-top: var(--section-gap); */
+    transition: 300ms all ease-in-out;
+}
+
+/* gap */
+
+body {
+    --page-margin: 24px;
+    --title-gap: 20px;
+    --column-gap: 24px;
+    --section-gap: 64px;
+    background: var(--bg-color);
+}
+
+/* font */
+
+p, li {
+    font-family: 'Inter var experimental', sans-serif;
+    font-variation-settings: 'wght' 350;
+    font-size: 16px;
+    line-height: 180%;
+    margin-bottom: 1.5em;
+    color: var(--text-color-p);
+}
+
+p>strong, li>strong {
+    font-variation-settings: 'wght' 550;
+}
+
+p a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--hint-color);
+}
+
+p a:hover {
+    opacity: 1;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    font-size: 36px;
+    line-height: 150%;
+    color: var(--text-color-primary);
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--text-color-primary);
+    margin-bottom: var(--title-gap);
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--text-color-primary);
+    margin-bottom: var(--title-gap);
+}
+
+.caption {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: var(--text-color-p);
+    margin-top: 1em;
+}
+
+.quote {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--text-color-p);
+    opacity: .5;
+}
+
+img, video {
+    width: 100%;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* list */
+
+ol, ul {
+    margin-left: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+    /* gap */
+    body {
+        --page-margin: 64px;
+        --title-gap: 40px;
+        --column-gap: 30px;
+        --section-gap: 96px;
+    }
+    /* font */
+    p, li {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .quote {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        --page-margin: max(calc(50vw - 490px), 96px);
+        /*max 980px*/
+        --title-gap: 40px;
+        --column-gap: 30px;
+        --section-gap: 120px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p, li {
+        font-size: 17px;
+    }
+}
