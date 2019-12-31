@@ -61,10 +61,12 @@ nav>.logo {
     display: flex;
 }
 .logo>.logo-img{
-    width: 28px;
-    height: 28px;
-    background-image: url(../assets/fav-icon.png);
+    width: 40px;
+    height: 40px;
+    background-image: url(../assets/avatar.png);
     background-size: cover;
+    background-color: var(--bg-color-2);
+    border-radius: 50%;
 }
 
 /* menu icon */
@@ -122,8 +124,8 @@ nav>.menu {
 
 /* theme switch */
 .theme-switch {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     background: url(../assets/moon.svg);
     background-size: cover;

@@ -43,7 +43,6 @@ body {
 #work>.space {
     height: var(--section-gap);
 }
-
 .intro h1 strong {
     color: var(--text-color-primary);
     font-family: 'Merriweather', serif;
@@ -58,7 +57,7 @@ body {
     line-height: 1.6em;
     color: var(--text-color-secondary);
     position: absolute;
-    bottom: 40px;
+    bottom: 64px;
 }
 
 .scroll-hint a {
@@ -127,7 +126,7 @@ body {
 }
 
 .gallery {
-    padding: 0 var(--page-margin);
+    padding: var(--section-gap) var(--page-margin);
     max-width: 400px;
     display: grid;
     row-gap: var(--section-gap);
@@ -174,8 +173,7 @@ body {
 /* abouts */
 
 #about {
-    margin-top: var(--section-gap);
-    padding: var(--section-gap) var(--page-margin);
+    padding: 0 var(--page-margin);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,6 +236,14 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+    .intro .avatar {
+        width: 96px;
+        min-height: 96px;
+    }
+    .intro h1{
+        font-size: 36px;
+        max-width: 400px;
+    }
     .gallery {
         max-width: 980px;
         column-gap: var(--section-gap);
