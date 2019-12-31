@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- loading -->
+    <link rel="stylesheet" href="./style/loadng.css">
+    <script src="./script/loading.js"></script>
+    <div id="loading"><div class="spinner"></div></div>
     <!-- site icon -->
     <link rel="icon" href="/assets/fav-icon.png" type="image/png" />
     <link rel="shortcut icon" href="/assets/fav-icon.png" type="image/png" />
@@ -19,6 +23,7 @@
     <meta name="url" content="http://www.sylvesterlau.xyz">
     <meta name="og:url" content="http://www.sylvesterlau.xyz">
     <!-- style -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
     <link rel="stylesheet" href="./style/style_guide.css">
     <link rel="stylesheet" href="./style/home.css">
@@ -27,7 +32,7 @@
 
 <body>
     <nav></nav>
-    <div class="intro" id="intro">
+    <div class="intro" id="intro" data-aos="fade-up" data-aos-duration="1000">
         <div class="avatar"></div>
         <h1>Hey there, I’m <br>
             <strong>Sylvester Lau.</strong>
@@ -35,13 +40,13 @@
         </h1>
         <p class="scroll-hint" href="#work"><span class="arrow">↓</span> See my work </p>
     </div>
-    <div id="work">
+    <div id="work" data-aos="fade-up" data-aos-duration="1000">
         <div class="space"></div>
         <div class="gallery"></div>
     </div>
-    <div id="about">
+    <div data-aos="fade-up" data-aos-duration="1000" id="about">
         <img src="./assets/me.jpg" alt="" class="me">
-        <div>
+        <div data-aos="fade-up">
             <h3>Call me Sylvester Lau or <span class="cn">刘劲松</span></h3>
             <p>I’m a product designer with 2+ years experience. I manily focus on crafting digital experience and
                 interaction, and try to make the idea become an actual product.
@@ -51,13 +56,17 @@
                 <a class="socicon-instagram" href="https://www.instagram.com/soyeah.real/" target="_blank"></a>
                 <a class="socicon-mail" href="mailto:justsoyeah@gmail.com" target="_blank"></a>
                 <a class="socicon-linkedin" href="https://www.linkedin.com/in/劲松-刘-374b76119/" target="_blank"></a>
+                <a href="" class="socicon-behance"></a>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/render_nav.js"></script>
     <script src="./script/home.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 <footer>© 2019 sylvesterlau.xyz</footer>
