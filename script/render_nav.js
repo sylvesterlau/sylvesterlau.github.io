@@ -8,7 +8,7 @@ function renderNav() {
     var path = $('html').attr('path');
     var nav = $('nav');
     var logoImg = $('<div/>').addClass('logo-img');
-    var logo = $('<a/>').addClass('logo').append('Syl L');
+    var logo = $('<a/>').addClass('logo');
     var work = $('<a/>').append('work'),
         about = $('<a/>').append('About'),
         cv = $('<a/>').append('View CV'),
@@ -16,12 +16,12 @@ function renderNav() {
         menu_icon = menuIcon();
 
     if (path == 'home') {
-        logo.click(function () { closeMenu(); smoothScrollTo('#intro') });
+        logo.append('Syl L').click(function () { closeMenu(); smoothScrollTo('#intro') });
         work.click(function(){closeMenu(); smoothScrollTo('#work')});
         about.click(function(){closeMenu(); smoothScrollTo('#about')});
         cv.attr('href','./assets/CV-JinsongLIU.pdf')
     } else {
-        logo.attr('href','../index.html')
+        logo.append(logoImg).attr('href','../index.html')
         work.attr('href','../index.html#work')
         about.attr('href','../index.html#about')
         cv.attr('href','../assets/CV-JinsongLIU.pdf')
@@ -52,7 +52,7 @@ function menuIcon() {
 
 function themeIcon() {
     var themeIcon = $('<div/>').addClass('theme-switch');
-    themeIcon.click(function () { switchTheme() })
+    themeIcon.click(function () { closeMenu();switchTheme() })
     return themeIcon;
 }
 
