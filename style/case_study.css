@@ -131,12 +131,12 @@ img.l {
     align-self: center;
 }
 
-.hover-child img {
+.hover-child * {
     transition: all 200ms ease-in-out;
 }
 
-.hover-child img:hover {
-    transform: translateY(-4px) scale(1.02);
+.hover-child>*:hover {
+    transform: scale(1.02);
     box-shadow: 0px 4px 24px rgba(0, 0, 0, .08);
 }
 
@@ -164,8 +164,6 @@ iframe.fb-demo {
     display: none;
 }
 
-/* phone demo end*/
-
 .topBtn {
     cursor: pointer;
     color: var(--bg-color-2);
@@ -186,6 +184,52 @@ iframe.fb-demo {
 
 .topBtn.hide {
     bottom: -56px;
+}
+
+/* rich link */
+
+.rich-link {
+    background-color: var(--bg-color-2);
+    padding-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.rich-link .image {
+    height: 160px;
+    background-color: var(--bg-color);
+    background-size: cover;
+}
+
+.rich-link p {
+    font-variation-settings: 'wght' 600;
+    margin: 1em 16px 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.rich-link p.caption {
+    margin: 4px 16px 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.rich-link .url {
+    font-size: 12px;
+    opacity: .5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 @media only screen and (min-width: 768px) {

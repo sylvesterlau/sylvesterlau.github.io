@@ -97,6 +97,8 @@ body {
     transition: opacity 300ms ease-in-out;
     animation: arrow_right 300ms 1 ease-in-out forwards;
 }
+/* qr code */
+
 
 @keyframes arrow_right {
     0% {
@@ -185,6 +187,7 @@ body {
     max-width: 200px;
     border-radius: 50%;
     margin: var(--title-gap) 0;
+    margin-bottom: 64px;
 }
 #about .social{
     margin-top: var(--title-gap);
@@ -202,6 +205,22 @@ body {
     margin-right: 32px;
     width: 32px;
     height: 32px;
+    position: relative;
+    cursor: pointer;
+}
+/* qr code */
+.qrcode {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -180px;
+    left: -60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .08);
+    display: none;
+}
+a:hover .qrcode{
+    display: block;
 }
 
 @media only screen and (min-width: 768px) {
