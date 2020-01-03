@@ -5,12 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- loading -->
-    <link rel="stylesheet" href="../style/loadng.css">
-    <script src="../script/loading.js"></script>
-    <div id="loading">
-        <div class="spinner"></div>
-    </div>
     <!-- site icon -->
     <link rel="icon" href="../assets/fav-icon.png" type="image/png" />
     <link rel="shortcut icon" href="../assets/fav-icon.png" type="image/png" />
@@ -30,12 +24,18 @@
     <link rel="stylesheet" href="../style/case_study.css">
     <link rel="stylesheet" href="../style/nav.css">
     <title>Bubble Trouble - Sylvester Lau</title>
+    <!-- loading -->
+    <link rel="stylesheet" href="../style/loadng.css">
+    <script src="../script/loading.js"></script>
 </head>
 
 
 
 <body>
     <nav></nav>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
     <section class="title" id="top" data-aos="fade-up" data-aos-duration="1000">
         <h1>“Bubble Trouble”:</h1>
         <h1>Interactive Explanation</h1>
@@ -59,7 +59,7 @@
             </div>
             <div class="meta-item">
                 <p><strong>Date</strong></p>
-                <p>Jul - Oct 2019</p>
+                <p>2 months, August - October 2019</p>
             </div>
             <div class="meta-item">
                 <p><strong>My Role</strong></p>
@@ -82,12 +82,13 @@
             different views. But some projects with similar ideas already exists. These projects require real users and
             extensive work in data processing. Another concept design couldn’t solve the problem. But when I showed them
             to others, it always took them a while to understand. Most of them didn’t have a clear view of what a filter
-            bubble.</p>
+            bubble is.</p>
         <div class="col-3 hover-child">
-            <img src="../assets/fb/link_mix.jpg" alt="">
-            <img src="../assets/fb/link_flipfeed.jpg" alt="">
-            <img src="../assets/fb/link_model.jpg" alt="">
+            <a class="rich-link" href="https://mix.com"></a>
+            <a href="https://www.media.mit.edu/projects/flipfeed/overview/" class="rich-link"></a>
+            <a href="https://www.technologyreview.com/s/611807/this-is-what-filter-bubbles-actually-look-like/" class="rich-link"></a>
         </div>
+        
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
         <div class="quote">“The first step to burst the filter bubble is to know that it exists.”
@@ -185,7 +186,8 @@
             <img src="../assets/fb/visual_design_chart.jpg" alt="">
             <img src="../assets/fb/visual_design_rules.jpg" alt="">
         </div>
-        <img src="../assets/fb/screens.png" alt="" class="l">
+        <img src="../assets/fb/screen-1.jpg" alt="" class="l">
+        <img src="../assets/fb/screen-2.jpg" alt="" class="l">
     </section>
     <section class="dark">
         <h2>Final Design Demo</h2>
@@ -216,6 +218,7 @@
     <script src="../script/render_nav.js"></script>
     <script src="../script/casestudy.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/richlink.js"></script>
     <script>
         AOS.init();
     </script>
