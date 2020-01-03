@@ -2,6 +2,7 @@ $(document).ready(function () {
     renderNav();
     setTheme(localStorage.getItem('theme'));
     scrollDetect();
+    // navShadow();
 })
 
 function renderNav() {
@@ -105,7 +106,6 @@ function scrollDetect() {
             };
         });
     });
-
 }
 // smooth scroll
 function smoothScrollTo(id) {

@@ -19,5 +19,4 @@ function topBtnShow() {
             topBtn.addClass('hide')
         }
     });
-
 }
