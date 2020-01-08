@@ -1,10 +1,3 @@
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
-  });  
-}
-
 $(document).ready(function () {
     $.getJSON('./content/home.json', function (data) {
         $.each(data.projects, function () { renderWork(this) });
@@ -12,6 +5,10 @@ $(document).ready(function () {
     //scroll hint
     $('.scroll-hint').click(function(){
         smoothScrollTo('#work')
+    })
+    //avatar click
+    $('.avatar').click(function(){
+        smoothScrollTo('#about')
     })
 })
 
