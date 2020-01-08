@@ -2,21 +2,19 @@
     "projects": [
         {
             "index": "Case 1",
-            "title": "Filter Bubble",
+            "title": "Bubble Trouble",
             "caption": "Side Project, Interactive, Data Visualization",
             "img": "./assets/work-cover/fb.jpg",
             "video": "./assets/work-cover/fb.mp4",
-            "href": "./work/filter-bubble.html",
-            "class":"l"
+            "href": "./work/filter-bubble.html"
         },
         {
             "index": "Case 2",
             "title": "Kungfu Order",
-            "caption": "UI/UX, Mobile",
+            "caption": "Catering, UI/UX, Mobile",
             "img": "./assets/work-cover/kf.jpg",
             "video": "./assets/work-cover/kf.mp4",
-            "href": "./work/kf-order.html",
-            "class":"m"
+            "href": "./work/kf-order.html"
         },
         {
             "index": "Case 3",
@@ -24,8 +22,7 @@
             "caption": "Education, UI/UX, Motion",
             "img": "./assets/work-cover/refuel.jpg",
             "video": "./assets/work-cover/refuel.mp4",
-            "href": "./work/refuel.html",
-            "class":"l"
+            "href": "./work/refuel.html"
         },
         {
             "index": "Case 4",
@@ -33,8 +30,7 @@
             "caption": "Side Project, Mobile, Watch",
             "img": "./assets/work-cover/timelapse.jpg",
             "video": "./assets/work-cover/timelapse.mp4",
-            "href": "./work/timelapse.html",
-            "class":"m"
+            "href": "./work/timelapse.html"
         }
     ]
 }
