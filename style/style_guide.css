@@ -10,9 +10,7 @@ html[data-theme='light'] {
     --text-color-primary: rgba(0, 0, 0, 0.95);
     --text-color-secondary: rgba(0, 0, 0, 0.45);
     --text-color-tertiary: rgba(0, 0, 0, 0.3);
-    --text-color-p: rgba(0, 0, 0, 0.8);
-    --text-link-default: rgba(0, 0, 0, 0.3);
-    /* link color */
+    --text-color-p: rgba(0, 0, 0, 0.75);
 }
 
 html[data-theme='dark'] {
@@ -22,8 +20,6 @@ html[data-theme='dark'] {
     --text-color-secondary: rgba(255, 255, 255, .55);
     --text-color-tertiary: rgba(255, 255, 255, 0.4);
     --text-color-p: rgba(255, 255, 255, .75);
-    --text-link-default: rgba(255, 255, 255, .3);
-    /* link color */
 }
 
 * {
@@ -51,7 +47,6 @@ footer {
     text-align: center;
     line-height: 72px;
     width: 100%;
-    /* margin-top: var(--section-gap); */
     transition: 300ms all ease-in-out;
 }
 
@@ -78,6 +73,7 @@ p, li {
 
 p>strong, li>strong {
     font-variation-settings: 'wght' 550;
+    color: var(--text-color-primary);
 }
 
 p a {

@@ -27,6 +27,7 @@ body {
     background-size: contain;
     background-color: #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .intro h1 {
@@ -97,7 +98,6 @@ body {
     transition: opacity 300ms ease-in-out;
     animation: arrow_right 300ms 1 ease-in-out forwards;
 }
-/* qr code */
 
 
 @keyframes arrow_right {

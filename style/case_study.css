@@ -232,6 +232,10 @@ iframe.fb-demo {
     -webkit-box-orient: vertical;
 }
 
+.outline {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .overview {
         display: grid;
@@ -322,7 +326,41 @@ iframe.fb-demo {
     .center>* {
         max-width: 720px;
     }
-    .topBtn {
-        right: calc(var(--page-margin) - 56px);
+    /* outline */
+    .outline {
+        position: fixed;
+        right: 56px;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .outline>.item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 4px 0;
+    }
+    .outline>.item p {
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0 8px;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+    }
+    .outline>.item .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--text-color-primary);
+        opacity: .2;
+        transition: all 300ms ease-in-out;
+    }
+    /* hover */
+    .outline>.item:hover>p {
+        opacity: 1;
+    }
+    .outline>.item:hover>.dot {
+        opacity: .5;
     }
 }
