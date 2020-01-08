@@ -36,12 +36,12 @@
     <div id="loading">
         <div class="spinner"></div>
     </div>
-    <section class="title" id="top" data-aos="fade-up" data-aos-duration="1000">
-        <h1>“Bubble Trouble”:</h1>
-        <h1>Interactive Explanation</h1>
+    <section class="title" data-aos="fade-up" data-aos-duration="1000">
+        <h1>Bubble Trouble:</h1>
+        <h1>How the filte bubble works</h1>
     </section>
     <img src="../assets/fb/cover.jpg" class="title-img" data-aos="fade-up" data-aos-duration="1000"></img>
-    <section class="overview" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Overview" class="overview" data-aos="fade-up" data-aos-duration="1000">
         <h2>Overview</h2>
         <div>
             <p>This experimental project is an exploration to visualize the “filter bubble”, which occurs when websites
@@ -67,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="col-2" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Inspiration" class="col-2" data-aos="fade-up" data-aos-duration="1000">
         <div>
             <h3>What is filter bubble?</h3>
             <p>According to Eli Pariser, the inventor of this term, those algorithms create “a unique universe of
@@ -77,18 +77,19 @@
         <img class="m" src="../assets/fb/ted-talk.jpg" alt="ted-talk">
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
-        <h3>Related Project</h3>
+        <h3>Some Related Projects</h3>
         <p>I was first thinking of designing a product to solve this problem, maybe a news app that shows articles with
-            different views. But some projects with similar ideas already exists. These projects require real users and
-            extensive work in data processing. Another concept design couldn’t solve the problem. But when I showed them
+            different views. But some projects with similar ideas already exists. They all require real users and
+            massive work in data processing. Another concept design couldn’t solve the problem. But when I showed them
             to others, it always took them a while to understand. Most of them didn’t have a clear view of what a filter
             bubble is.</p>
         <div class="col-3 hover-child">
             <a class="rich-link" href="https://mix.com"></a>
             <a href="https://www.media.mit.edu/projects/flipfeed/overview/" class="rich-link"></a>
-            <a href="https://www.technologyreview.com/s/611807/this-is-what-filter-bubbles-actually-look-like/" class="rich-link"></a>
+            <a href="https://www.technologyreview.com/s/611807/this-is-what-filter-bubbles-actually-look-like/"
+                class="rich-link"></a>
         </div>
-        
+
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
         <div class="quote">“The first step to burst the filter bubble is to know that it exists.”
@@ -104,12 +105,11 @@
             <p><strong>3. Explorable explanations: </strong>Nicky Case’s “learning by playing” interactive games pattern
                 seems suitable, considering I was trying to explain a complex theory and make it fun.
             </p>
-            <p>So I decided to make an interactive website to visualize and explain how “filter bubble” works: It should
-                give an introduction to this term, and show the way it formulates the content we read, and provide some
+            <p>So I decided to make an interactive website to visualize and explain how “filter bubble” works: to give an introduction to this term, show the way it alters the content we read, and provide some
                 takeaway suggestions on how to deal with it.</p>
         </div>
     </section>
-    <section class="grey" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Prototyping" class="grey" data-aos="fade-up" data-aos-duration="1000">
         <h2>Prototyping</h2>
         <h3>Start from a script</h3>
         <p>Unlike a product design project, I started with a script from something familiar (like browsing news on
@@ -149,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="dark" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Design" class="dark" data-aos="fade-up" data-aos-duration="1000">
         <img src="../assets/fb/coding-browser.png" alt="">
         <h2>Building the simulation</h2>
         <p>I tried to learn D3.js to make the simulation demo. D3.js is a JavaScript library for data visualization and
@@ -189,7 +189,7 @@
         <img src="../assets/fb/screen-1.jpg" alt="" class="l">
         <img src="../assets/fb/screen-2.jpg" alt="" class="l">
     </section>
-    <section class="dark">
+    <section id="Live_Demo" class="dark">
         <h2>Final Design Demo</h2>
         <p>Here’s the demo “Bubble Trouble”. Feel free to play around or <a target="_blank"
                 href="../assets/fb/fb_demo_v7/index.html">run it on
