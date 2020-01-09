@@ -2,7 +2,7 @@
     "scene_1_1": [
         {
             "tag": "h1",
-            "text": "Browse News 1-1"
+            "text": "Browse News"
         },
         {
             "tag": "p",
@@ -25,7 +25,7 @@
     "scene_1_2": [
         {
             "tag": "h1",
-            "text": "Here’s the pattern 1-2"
+            "text": "Here’s the pattern"
         },
         {
             "tag": "p",
@@ -88,7 +88,7 @@
                 },
                 {
                     "class": "",
-                    "text": "news), this news was marked read. the Bubble News will remember it."
+                    "text": "news), this news was marked read. the Bubble News will remember your click."
                 }
             ]
         },
@@ -101,15 +101,11 @@
     "scene_1_3": [
         {
             "tag": "h1",
-            "text": "Here’s the pattern 1-3"
+            "text": "Step 2: Remove"
         },
         {
             "tag": "p",
-            "text": "Step 2."
-        },
-        {
-            "tag": "p",
-            "text": "Then the Bubble News would randomly reduce one news of other type."
+            "text": "Then the Bubble News would randomly remove one news of other type."
         },
         {
             "tag": "spans",
@@ -139,7 +135,7 @@
     "scene_1_4": [
         {
             "tag": "h1",
-            "text": "Here’s the pattern 1-3"
+            "text": "Step 3. Add"
         },
         {
             "tag": "spans",
@@ -309,7 +305,7 @@
         },
         {
             "tag": "p",
-            "text": "The first thing to burst the filter bubble is to know that it exists all the time. Next time when you using Google or playing with social media, remember that there’s some rules controlling what you see."
+            "text": "The first thing to burst the filter bubble is to know that it exists all the time. Next time when you are using Google or playing with social media, remember that some rules are controlling what you see."
         },
         {
             "tag": "button",
@@ -328,7 +324,7 @@
         },
         {
             "tag": "p",
-            "text": "Turn off the tracking option on some websites, or use anonymous search engine like DuckDuckGo would help reduce influence of algorithms."
+            "text": "Turn off the tracking option on some websites, or use anonymous search engines like DuckDuckGo would help reduce the influence of algorithms."
         },
         {
             "tag":"p",
@@ -351,7 +347,11 @@
         },
         {
             "tag": "p",
-            "text": "Try to explore something new, step out of your comfort zone, exchange ideas with someone holds different opinions. Get more “noise” to your bubble is the most effective way the burst it."
+            "text": "Explore something new. Step out of your comfort zone. Exchange ideas with someone holding different opinions."
+        },
+        {
+            "tag": "p",
+            "text": "Get more “noise” to your bubble is the most effective way the burst it."
         },
         {
             "tag": "button",
