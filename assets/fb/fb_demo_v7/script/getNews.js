@@ -136,6 +136,8 @@ function clickNews() {
             $(this).remove();
             reduceNews(rt);
             setTimeout(function () {
+                //scroll
+                $("#screen").animate({ scrollTop: 0 }, 500);
                 addNews(thisType);
                 setTimeout(function () {
                     addNews(thisType);

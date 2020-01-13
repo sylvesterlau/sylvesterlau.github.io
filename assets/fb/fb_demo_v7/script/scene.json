@@ -389,7 +389,7 @@
         },
         {
             "tag": "p",
-            "text": "Step 1: Click<br>When you clicked the first news (for example, lifestyle news),this news was marked read. the Bubble News will remember it."
+            "text": "1. Click<br>There are several types of news here. Just hover and click anything you like."
         },
         {
             "tag": "img",
@@ -397,7 +397,7 @@
         },
         {
             "tag": "p",
-            "text": "Step 2: Remove<br>One random news other than lifestyle would be removed."
+            "text": "2. Remove<br>One news of other types would be removed from the bubble."
         },
         {
             "tag": "img",
@@ -405,7 +405,7 @@
         },
         {
             "tag": "p",
-            "text": "Step 3: Add<br>Two more lifestyle news would move into the bubble."
+            "text": "3. Add<br>And two more news of the same type would show up."
         }
     ]
 }
