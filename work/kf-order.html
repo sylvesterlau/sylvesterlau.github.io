@@ -19,7 +19,7 @@
     <meta name="description" content="Helping a Chinese fast-food company embrace digitalization." />
     <meta name="og:description" content="Helping a Chinese fast-food company embrace digitalization." />
     <!-- style -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/style_guide.css">
     <link rel="stylesheet" href="../style/case_study.css">
     <link rel="stylesheet" href="../style/nav.css">
@@ -30,7 +30,9 @@
 
 <body>
     <nav></nav>
-    <div id="loading"><div class="spinner"></div></div>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
     <section class="title" data-aos="fade-up" data-aos-duration="1000">
         <h1>Kungfu Order:</h1>
         <h1>Design for Fast Ordering</h1>
@@ -39,7 +41,9 @@
     <section id="Overview" class="overview" data-aos="fade-up" data-aos-duration="1000">
         <h2>Overview</h2>
         <div>
-            <p>Kungfu Restaurant is a Chinese fast-food restaurant founded over 25 years. It provides premium quality meals and services through the standardization of Chinese food production, which makes it the only local company in the top five in the fast-food market.</p>
+            <p>Kungfu Restaurant is a Chinese fast-food restaurant founded over 25 years. It provides premium quality
+                meals and services through the standardization of Chinese food production, which makes it the only local
+                company in the top five in the fast-food market.</p>
             <p>
                 As the company continued to grow, Kungfu needed to keep up with the trend of digitalization in China and
                 provide a better dining experience to gain more customers and a better reputation.</p>
@@ -59,10 +63,12 @@
             </div>
         </div>
     </section>
-    <section id="Research_&_Experienment" data-aos="fade-up" data-aos-duration="1000">
+    <section id="Research_and_Experienment" data-aos="fade-up" data-aos-duration="1000">
         <h2>Research and Experiment</h2>
-        <p>We started with gathering necessary information from the existent customers. With the help of the marketing team
-            of Kungfu Restaurant Co., we collected more than <strong>1,000 questionnaires</strong> and highlighted some of the major
+        <p>We started with gathering necessary information from the existent customers. With the help of the marketing
+            team
+            of Kungfu Restaurant Co., we collected more than <strong>1,000 questionnaires</strong> and highlighted some
+            of the major
             pain points for further analysis.</p>
         <img src="../assets/kf-order/demographic.png" alt="" class="l">
         <img src="../assets/kf-order/experience-map.png" alt="" class="l">
@@ -87,8 +93,8 @@
             minimun variable products. As the lead designer, I needed to deliver the design with rapid prototyping and
             evaluate them with
             usability testing.</p>
-            <p>We quickly launched the first version to see whether the users would prefer
-                phone-ordering than the conventional way.</p>
+        <p>We quickly launched the first version to see whether the users would prefer
+            phone-ordering than the conventional way.</p>
         <div class="col-2">
             <div class="container">
                 <img src="../assets/kf-order/mvp.jpg" alt="">
@@ -99,7 +105,7 @@
                 <p class="caption">Scrum Framework</p>
             </div>
         </div>
-        
+
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
         <h3>MVP Experiment Result</h3>
@@ -111,9 +117,18 @@
             The
             staffs combined the service into the retail process and achieved higher productivity.</p>
         <div class="col-3">
-            <img src="../assets/kf-order/sketches.jpg" alt="">
-            <img src="../assets/kf-order/restaurant-1.jpg">
-            <img src="../assets/kf-order/restaurant-2.jpg">
+            <div>
+                <img src="../assets/kf-order/sketches.jpg" alt="">
+                <p class="caption">Sketches for MVP 1</p>
+            </div>
+            <div>
+                <video autoplay loop muted playsinline src="../assets/kf-order/mvp1.mp4"></video>
+                <p class="caption">A rough design for qucik test</p>
+            </div>
+            <div>
+                <img src="../assets/kf-order/restaurant-2.jpg">
+                <p class="caption">Running the user flow in store</p>
+            </div>
         </div>
     </section>
     <section id="Design_Iteration" data-aos="fade-up" data-aos-duration="1000" class="grey">
@@ -133,21 +148,22 @@
                 improve
                 the products' capability in growth hacking to increase the quantity and loyalty of our customers.
             </p>
-            <p><strong>3. Inconsistent visual language</strong><br>The interface design looks a bit rough under agile
+            <p><strong>3. Inconsistent design language</strong><br>The interface design looks a bit rough under agile
                 development. A
                 consistent design system would help improve the design qupty in design sprints.</p>
         </div>
     </section>
     <section data-aos="fade-up" data-aos-duration="1000">
         <h3>Field Research and Data Analysis</h3>
-        <p>AAt this stage, we have access to overwhelming users data. We combined user observation, interview and behaviour analysis to target the specific problem occurred in the user flow.</p>
+        <p>At this stage, we have access to overwhelming user data. We combined user observation, interview and
+            behaviour analysis to target the specific problem occurred in the user flow.</p>
         <div class="col-3">
             <div>
-                <img src="../assets/kf-order/resraurant_1.jpg" alt="">
+                <img src="../assets/kf-order/restaurant-3.jpg" alt="">
                 <p class="caption"><strong>User observation</strong> in local restaurant</p>
             </div>
             <div>
-                <img src="../assets/kf-order/resraurant_2.jpg" alt="">
+                <img src="../assets/kf-order/restaurant-4.jpg" alt="">
                 <p class="caption"><strong>Usability test</strong> at the headquarter</p>
             </div>
             <div>
@@ -165,13 +181,15 @@
         <div class="col-2">
             <div>
                 <h2>Design System</h2>
-                <p>I used the frame of the Atomic Design System and rebuilt all the UI elements to formulate
+                <p>I used the frame of the <strong>Atomic Design System</strong> and rebuilt all the UI elements to
+                    formulate
                     consistent
                     interface and experience. Collaborating with engineers, we implemented every design tokens,
                     components
                     and templates to maintain a cohesive design during fast scaling.</p>
             </div>
-            <img src="../assets/kf-order/atomic.png" alt="">
+            <img class="light" src="../assets/kf-order/atomic.png" alt="">
+            <img class="dark" src="../assets/kf-order/atomic_dark.png" alt="">
         </div>
         <div class="col-3 hover-child">
             <img src="../assets/kf-order/ds_color.png" alt="">
@@ -206,7 +224,8 @@
         <div class="phone-demo">
             <div class="text">
                 <h3>Menu</h3>
-                <p>We enhanced the menu with organized catalogue and intuitive customizing meal sets based on the mental model we discovered from card sorting. It is an example
+                <p>We enhanced the menu with organized catalogue and intuitive customizing meal sets based on the mental
+                    model we discovered from card sorting. It is an example
                     of how motion provides meanings.</p>
             </div>
             <div class="phone">
@@ -231,7 +250,9 @@
         <div class="phone-demo">
             <div class="text">
                 <h3>Order Ticket</h3>
-                <p>Inspired by the bordering pass, I redesigned the order screen. The customers could be aware of the process at any time. Large number increased legibility when showing their phone to get the meal in a noisy
+                <p>Inspired by the bordering pass, I redesigned the order screen. The customers could be aware of the
+                    process at any time. Large number increased legibility when showing their phone to get the meal in a
+                    noisy
                     environment.</p>
             </div>
             <div class="phone">
@@ -249,7 +270,8 @@
                 was expending. The average time of order takes only <strong>90 seconds</strong>, which brings us 89% of
                 customer satisfaction. We delivered both integrated services and the concept of digital operation to our
                 client.</p>
-                <img class="award" src="../assets/kf-order/award.png" alt="">
+            <img class="award light" src="../assets/kf-order/award.png" alt="">
+            <img class="award dark" src="../assets/kf-order/award_dark.png" alt="">
         </div>
     </section>
     <section data-aos="fade-up" data-aos-duration="1000" class="grey">
@@ -282,14 +304,14 @@
     </section>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/Chart.js/2.8.0-rc.1/Chart.min.js"></script>
+    <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
     <script src="../script/casestudy.js"></script>
-    <script src="../script/render_nav.js"></script>
+    <script src="../script/pageSetUp.js"></script>
     <script src="../script/line_chart.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-            AOS.init();
+        AOS.init();
     </script>
 </body>
-<footer>© 2019 sylvesterlau.xyz - All rights reserved.</footer>
 
 </html>
