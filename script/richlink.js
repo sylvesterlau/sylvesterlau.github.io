@@ -4,7 +4,7 @@ $('a.rich-link').each(function () {
     //get info
     $.ajax({
         url: "https://api.linkpreview.net",
-        data: { q: target, key: '5e0eb7521a997b5772e76f08303fcf14b8246606887e6' },
+        data: { q: target, key: '5e155ea4f1ff72502a221af43f6234db8d4da4b0bd21d' },
         success: function (result) {
             console.log(result)
             parseRichLink(a, result.image, result.title, result.description, result.url)
