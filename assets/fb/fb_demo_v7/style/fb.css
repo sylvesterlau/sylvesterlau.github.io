@@ -18,7 +18,7 @@ html {
 
 body {
     width: 100%;
-    height: 720px;
+    height: 100vh;
     background-image: linear-gradient(180deg, #211B5B 0%, #0B0B25 100%);
     -moz-user-select: -moz-none;
     -moz-user-select: none;
@@ -84,7 +84,7 @@ button.title {
 }
 
 #canvas {
-    height: 720px;
+    height: 100%;
     display: flex;
 }
 
@@ -102,7 +102,7 @@ button.title {
 
 #display .phone {
     width: 436px;
-    height: 690px;
+    height: 700px;
     background: #111035;
     border: 8px solid #514D81;
     border-bottom-style: none;
@@ -255,7 +255,7 @@ span.new {
 /* text-area */
 
 #text-area {
-    width: 500px;
+    width: 600px;
     padding-right: 100px;
     display: flex;
     align-items: center;
@@ -443,6 +443,7 @@ circle.entertainment {
 .large {
     width: 611px;
     height: 640px;
+    align-self: center;
 }
 
 /* 说明文字加粗 */
