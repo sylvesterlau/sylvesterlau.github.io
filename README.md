@@ -6,4 +6,4 @@ Hey! I'm Sylvester Lau 刘劲松,  a UX designer from China. This is my first we
 - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [Font Awesome](https://fontawesome.com)
 - [Chart.js](https://www.chartjs.org)
-- [AOS.js](https://michalsnik.github.io/aos/)
+- [AOS - Animate On Scroll Library](https://michalsnik.github.io/aos/)
