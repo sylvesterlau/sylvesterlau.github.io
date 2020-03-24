@@ -78,15 +78,15 @@ body {
 }
 
 .work:hover .img-wrap {
-    transform: translateY(-12px) scale(1.05);
+    transform: translateY(-12px) scale(1.02);
 }
 
 .work video {
-    transition: all 800ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .work:hover img {
-    opacity: 0;
+    filter: brightness(.7);
 }
 
 .work:hover video {
