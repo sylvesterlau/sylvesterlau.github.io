@@ -4,9 +4,8 @@ $('a.rich-link').each(function () {
     //get info
     $.ajax({
         url: "https://api.linkpreview.net",
-        data: { q: target, key: '5e1d6bfc11396f43886c531b689e61b79974a4bed99b0' },
+        data: { q: target, key: '1c925ff3961926c4c1e6cae25cdcc6e0' },
         success: function (result) {
-            console.log(result)
             parseRichLink(a, result.image, result.title, result.description, result.url)
         }
     });

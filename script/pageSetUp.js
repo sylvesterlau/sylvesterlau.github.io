@@ -92,16 +92,13 @@ function scrollDetect() {
             var after = $(window).scrollTop();
             if (before <= 0) {
                 nav.removeClass('hide')
-                // before = after;
             }
             else if (before < after) {
                 nav.addClass('hide')
-                // console.log('上');
                 before = after;
             }
             else if (before > after) {
                 nav.removeClass('hide')
-                // console.log('下');
                 before = after;
             };
         });
@@ -115,7 +112,6 @@ function smoothScrollTo(id) {
 }
 //render footer
 function renderFooter(){
-    console.log('footer')
     var footer = $('<footer/>').text('© 2020 sylvesterlau.xyz - All rights reserved.');
     $('body').append(footer);
 }

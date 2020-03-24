@@ -14,9 +14,8 @@ $(document).ready(function () {
 
 function renderWork(a) {
     var img = $('<img/>').attr('src', a.img),
-        video = $('<video loop playsinline preload/>').attr('src', a.video),
         wrap = $('<div/>').addClass('img-wrap')
-            .append(img).append(video)
+            .append(img)
             
         arrow = '<span> →</span>',
         title = $('<h3/>').append(a.title + arrow),
@@ -26,7 +25,6 @@ function renderWork(a) {
         .append(wrap)
         .append(title)
         .append(caption)
-        .hover(function () { play(this) }, function () { stop(this) })
     $('.gallery').append(workCover);
 }
 
