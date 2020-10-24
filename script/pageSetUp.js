@@ -12,6 +12,7 @@ function renderNav() {
     var logo = $('<a/>').addClass('logo');
     var work = $('<a/>').append('work'),
         about = $('<a/>').append('About'),
+        blog = $('<a/>').append('Blog'),
         cv = $('<a/>').append('View CV'),
         theme_icon = themeIcon(),
         menu_icon = menuIcon();
@@ -20,11 +21,13 @@ function renderNav() {
         logo.append('Syl L').click(function () { closeMenu(); smoothScrollTo('#intro') });
         work.click(function(){closeMenu(); smoothScrollTo('#work')});
         about.click(function(){closeMenu(); smoothScrollTo('#about')});
+        blog.attr('href','https://sylvester.typlog.io/').attr('target','_blank')
         cv.attr('href','./assets/CV-JinsongLIU.pdf')
     } else {
         logo.append(logoImg).attr('href','../index.html')
         work.attr('href','../index.html#work')
         about.attr('href','../index.html#about')
+        blog.attr('href','https://sylvester.typlog.io/').attr('target','_blank')
         cv.attr('href','../assets/CV-JinsongLIU.pdf')
     }
 
@@ -32,6 +35,7 @@ function renderNav() {
         .append(work)
         .append(about)
         .append(cv)
+        .append(blog)
         .append(theme_icon);
 
     nav.append(logo).append(nav_wrap).append(menu_icon);
