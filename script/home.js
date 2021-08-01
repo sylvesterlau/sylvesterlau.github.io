@@ -1,30 +1,26 @@
 $(document).ready(function () {
-    $.getJSON('./content/home.json', function (data) {
+    $.getJSON('./content/projects.json', function (data) {
         $.each(data.projects, function () { renderWork(this) });
-    })
-    //scroll hint
-    $('.scroll-hint').click(function(){
-        smoothScrollTo('#work')
-    })
-    //avatar click
-    $('.avatar').click(function(){
-        smoothScrollTo('#about')
     })
 })
 
 function renderWork(a) {
     var img = $('<img/>').attr('src', a.img),
+        videoSource = $('<source/>').attr('src', a.video),
+        video = $('<video autoplay loop/>').append(videoSource),
         wrap = $('<div/>').addClass('img-wrap')
-            .append(img)
-            
-        arrow = '<span> →</span>',
+            .append(img).append(video),
+        arrow = '<span class="arrow"> →</span>',
         title = $('<h3/>').append(a.title + arrow),
-        caption = $('<p/>').text(a.caption);
+        caption = $('<p/>').append(a.year + "<span> / </span>" + a.tag + "<span> / </span>" + a.keyword);
     var workCover = $('<a/>').addClass('work')
         .attr('href', a.href)
         .append(wrap)
         .append(title)
-        .append(caption)
+        .append(caption);
+    workCover.hover(
+        function () { play($(this)) }, function () { stop($(this)) }
+    )
     $('.gallery').append(workCover);
 }
 

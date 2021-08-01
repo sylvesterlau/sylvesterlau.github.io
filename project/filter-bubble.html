@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" path='projects' case='fb'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- site icon -->
+    <link rel="icon" href="../assets/fav-icon.png" type="image/png" />
+    <link rel="shortcut icon" href="../assets/fav-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/fav-icon.png" />
+    <!-- title -->
+    <title>Bubble Trouble</title>
+    <meta name="og:title" content="Bubble Trouble" />
+    <!-- description -->
+    <meta name="description" content="Case Study | Sylvester Lau" />
+    <meta name="og:description" content="Case Study | Sylvester Lau" />
+    <!-- url -->
+    <meta name="url" content="http://www.sylvesterlau.xyz">
+    <meta name="og:url" content="http://www.sylvesterlau.xyz">
+    <!-- style -->
+    <link href="https://cdn.bootcss.com/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style_guide.css">
+    <link rel="stylesheet" href="../style/case_study.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <title>Bubble Trouble - Sylvester Lau</title>
+    <!-- loading -->
+    <link rel="stylesheet" href="../style/loadng.css">
+    <script src="../script/loading.js"></script>
+</head>
+
+
+
+<body>
+    <nav></nav>
+    <section class="title">
+        <h1>Bubble Trouble</h1>
+        <h3>Visualizing how the filter bubble works</h3>
+    </section>
+    <img src="../assets/fb/cover.jpg" class="title-img"></img>
+    <section id="Overview" class="overview">
+        <h3>Overview</h3>
+        <div>
+            <p>This experimental project is an exploration to visualize the “filter bubble”, which occurs when websites
+                use algorithms selectively presenting information based on our preferences.</p>
+            <p>
+                The term “filter bubble” has grown into a frequent topic these years. Nearly every products and
+                service we used had embed personalized algorithm and therefore created an echo chamber for us. I
+                build this to get us thinking about our relationship with the online media, and suggest some ways to
+                deal with the “bubble trouble”.</p>
+        </div>
+        <div class="meta-info">
+            <div class="meta-item">
+                <p><strong>Side Project / 2019</strong></p>
+            </div>
+            <div class="meta-item">
+                <p><strong>My Role</strong></p>
+                <p>Designer, Developer</p>
+            </div>
+            <div class="meta-item">
+                <p><strong>Keywords</strong></p>
+                <p># Data visualization</p>
+                <p># D3.js</p>
+            </div>
+        </div>
+    </section>
+    <section class="col-2">
+        <div>
+            <h3>Why Explaining “Filter Bubble”?</h3>
+            <p>Eli Pariser, descripes that personalized algorithms create “a unique universe of information for each of us … which fundamentally alters the way we encounter ideas and information.” My first instinct was to design a product to solve it, but only to find some existing conceptual projects that require massive data processing. However, although those projects are amazingly inspiring, I found them rather incomprehensible for most people around me, especially without explaining what a filter bubble is.
+            </p>
+            <ul>
+                <li><a href="http://algodiv.huma-num.fr">Algodiv: information diversity & algorithmic recommendation</a></li>
+                <li><a href="https://www.media.mit.edu/projects/flipfeed/overview/">Filpfeed: a Google Chrome Extension that replace your own feed. MIT Media Lab (2018).</a></li>
+                <li><a href="https://www.technologyreview.com/s/611807/this-is-what-filter-bubbles-actually-look-like/">This is what filter bubbles actually look like. MIT Media Lab (2018).</a></li>
+            </ul>
+        </div>
+        <figure>
+            <img src="../assets/fb/ted-talk.jpg" alt="ted-talk">
+            <figcaption>Eli Pariser: <a href="https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles">Beware online "filter bubbles"</a></figcaption>
+        </figure>
+    </section>
+    <section>
+        <div class="center">
+            <h3>Insights and Goal</h3>
+            <p><strong>1. Real products require real data.</strong> Designing a tool may not be a good practice.
+            </p>
+            <p><strong>2. We are not familiar </strong>with how the “filter bubble” is affecting us, even we have
+                heard of it.</p>
+            <p><strong>3. Explorable explanations: </strong>Nicky Case’s <a href="https://explorabl.es">“learning by
+                    playing”</a> interactive games pattern
+                seems suitable, considering I was trying to explain a complex theory and make it fun.
+            </p>
+            <quote>The first step to burst the filter bubble is to know that it exists.</quote>
+        </div>
+    </section>
+        
+    <section>
+        <h2>Paper Prototyping</h2>
+        <p>Browsing some other explorable explanations made me realized that instead of trying to cover everything, it
+            should illustrate the shift of one straightforward model. And I explored just the right visual model through
+            a paper-based prototype.</p>
+            <figure>
+                <img src="../assets/fb/script.jpg" alt="" class="l">
+                <figcaption>Storyboard of filter bubble explanation</figcaption>
+            </figure>
+        
+        <div class="col-2">
+            <img src="../assets/fb/paper-based-1.jpg" alt="">
+            <img src="../assets/fb/paper-based-2.jpg" alt="">
+        </div>
+        <div class="col-3">
+            <figure>
+                <img src="../assets/fb/paper_rule_1.jpg" alt="">
+                <figcaption>#1 Choose one piece of information, and move it to “browse history” since you’ve read it.</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/fb/paper_rule_2.jpg" alt="">
+                <figcaption>#2 Increase two picese of the type you read. This is “recommended news” for you.</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/fb/paper_rule_3.jpg" alt="">
+                <figcaption>#3 Move one random piece of other type out of the bubble.</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="Design" class="dark">
+        <h2>Building the simulation</h2>
+        <p>To make the simulation demo, I learned <a href='https://d3js.org'>D3.js</a>, which is a JavaScript library
+            for data visualization and provides force layout of a smooth bubble chart. The simulation was constructed
+            from basics. It began with merely adding and removing dots (pieces of information), and ended with an
+            automatic running bubble chart.</p>
+        <img src="../assets/fb/coding-browser.png" alt="">
+        <div class="col-3">
+            <figure>
+                <video src="../assets/fb/simulate_1.mp4" autoplay loop muted playsinline></video>
+                <figcaption>Counting the types</figcaption>
+            </figure>
+            <figure>
+                <video src="../assets/fb/simulate_2.mp4" autoplay loop muted playsinline></video>
+                <figcaption>Adding and removing nodes</figcaption>
+            </figure>
+            <figure>
+                <video src="../assets/fb/simulate_3.mp4" autoplay loop muted playsinline></video>
+                <figcaption>Automatic calculating</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="dark">
+        <div>
+            <h2>Visual Design</h2>
+            <p>With a suitable prototype, the next step is to build the storyline and visual elements. I choose the
+                combination of a dark background and vibrant colours to highlight different types of news and evoke
+                the
+                visual metaphor of “the universe of information”.</p>
+        </div>
+        <div class="col-2">
+            <img src="../assets/fb/visual_design_phone.jpg" alt="">
+            <img src="../assets/fb/visual_design_bubble.jpg" alt="">
+            <img src="../assets/fb/visual_design_chart.jpg" alt="">
+            <img src="../assets/fb/visual_design_rules.jpg" alt="">
+            <img src="../assets/fb/screen-1.jpg" alt="">
+            <img src="../assets/fb/screen-2.jpg" alt="">
+        </div>
+
+    </section>
+    <section id="Live_Demo" class="dark">
+        <h2>Final Design Demo</h2>
+        <p>Here’s the demo “Bubble Trouble”. Feel free to play around or <a target="_blank"
+                href="https://sylvesterlau.com/bubble-trouble/">run it on
+                a new tab.</a> Please view the demo with desktop browser for better experience.</p>
+        <iframe src="https://sylvesterlau.com/bubble-trouble/" frameborder="0" class="fb-demo"></iframe>
+        <img class="demo-place-holder" src="../assets/fb/demo_place_holder.jpg" alt="">
+    </section>
+    <section>
+        <div class="center">
+            <h3>What I Learned</h3>
+            <p><strong>1. First experimental project practice:</strong><br>
+                There are considerable differences between an exploration and product design project. Transferring an
+                idea into script and prototype is a big challenge.</p>
+            <p><strong>2. The power of a simple concept:</strong><br>
+                A robust, powerful and memorable idea keeps people’s attention, and it takes efforts experiment to
+                figure out.
+            </p>
+            <p><strong>3. Coding as a design skill:</strong><br>
+                I learned a lot about coding to achieve my goal in this project. It gives me confidence and ambition
+                to try data visualization and generative art next time.</p>
+            <p><strong>4. It’s fun!</strong><br>Creating something original from the ground up is exciting. But the
+                result is also very unpredictable and hard to control.</p>
+        </div>
+    </section>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../script/pageSetUp.js"></script>
+    <script src="../script/casestudy.js"></script>
+</body>
+
+</html>

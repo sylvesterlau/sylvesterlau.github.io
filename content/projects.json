@@ -1,0 +1,64 @@
+{
+    "projects": [
+        {
+            "title": "Moley Robotics",
+            "caption": "2021 / Student Project / Human-robot interaction",
+            "year": 2021,
+            "tag": "Student Project",
+            "keyword": "Human-robot interaction",
+            "img": "./assets/work-cover/cover-moley-robotics.jpg",
+            "video": "./assets/work-cover/cover-moley.mp4",
+            "href": "./project/moley-robotics.html"
+        },
+        {
+            "title": "V&A’s Silk Road: Asia",
+            "caption": "2021 / Student Project / VR",
+            "year": 2021,
+            "tag": "Student Project",
+            "keyword": "VR",
+            "img": "./assets/work-cover/cover-vam.jpg",
+            "video": "",
+            "href": "./project/v&a-silk-road.html"
+        },
+        {
+            "title": "Bubble Trouble",
+            "caption": "Side Project / Interactive / Data Visualization",
+            "year": 2019,
+            "tag": "Side Project",
+            "keyword": "Data Visaulisation",
+            "img": "./assets/work-cover/cover-fb.jpg",
+            "video": "./assets/work-cover/fb.mp4",
+            "href": "./project/filter-bubble.html"
+        },
+        {
+            "title": "Kungfu Order",
+            "caption": "2019 / Retail / Design System",
+            "year": 2019,
+            "tag": "Retail",
+            "keyword": "Design System",
+            "img": "./assets/work-cover/cover-kf.jpg",
+            "video": "./assets/work-cover/kf.mp4",
+            "href": "./project/kf-order.html"
+        },
+        {
+            "title": "Refuel E-learning",
+            "caption": "2019 / Micro Learning / Education",
+            "year": 2019,
+            "tag": "Education",
+            "keyword": "Micro Learning",
+            "img": "./assets/work-cover/cover-refuel.jpg",
+            "video": "./assets/work-cover/refuel.mp4",
+            "href": "./project/refuel.html"
+        },
+        {
+            "title": "Timelapse",
+            "caption": "2020 / Side Project / Watch",
+            "year": 2019,
+            "tag": "Side Project",
+            "keyword": "Wearable Interface",
+            "img": "./assets/work-cover/cover-timelapse.jpg",
+            "video": "./assets/work-cover/timelapse.mp4",
+            "href": "./project/timelapse.html"
+        }
+    ]
+}

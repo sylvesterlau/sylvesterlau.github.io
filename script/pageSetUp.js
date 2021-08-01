@@ -1,63 +1,56 @@
 $(document).ready(function () {
     renderNav();
     setTheme(localStorage.getItem('theme'));
-    scrollDetect();
     renderFooter();
 })
 
 function renderNav() {
     var path = $('html').attr('path');
     var nav = $('nav');
-    var logoImg = $('<div/>').addClass('logo-img');
-    var logo = $('<a/>').addClass('logo');
-    var work = $('<a/>').append('work'),
-        about = $('<a/>').append('About'),
-        blog = $('<a/>').append('Blog'),
-        cv = $('<a/>').append('View CV'),
-        theme_icon = themeIcon(),
-        menu_icon = menuIcon();
+    var logoImg = $('<a/>').addClass('logo-img').attr('href', '../');
+    var logoText = $('<div/>').addClass('logo-text').text('sylvester lau');
+    var work = $('<a/>').attr('id', 'projects').append('projects'),
+        about = $('<a/>').attr('id', 'about').append('about'),
+        blog = $('<a/>').attr('id', 'blog').append('blog'),
+        buyCoffee = $('<a/>').append('buy me a coffee'),
+        theme_icon = themeIcon();
 
-    if (path == 'home') {
-        logo.append('Syl L').click(function () { closeMenu(); smoothScrollTo('#intro') });
-        work.click(function(){closeMenu(); smoothScrollTo('#work')});
-        about.click(function(){closeMenu(); smoothScrollTo('#about')});
-        blog.attr('href','https://blog.sylvesterlau.com/')
-        cv.attr('href','./assets/CV-JinsongLIU.pdf')
-    } else {
-        logo.append(logoImg).attr('href','../index.html')
-        work.attr('href','../index.html#work')
-        about.attr('href','../index.html#about')
-        blog.attr('href','https://blog.sylvesterlau.com/')
-        cv.attr('href','../assets/CV-JinsongLIU.pdf')
-    }
+    work.attr('href', '../')
+    about.attr('href', '../about.html')
+    blog.attr('href', 'https://blog.sylvesterlau.com')
+    buyCoffee.attr('href', 'https://www.buymeacoffee.com/sylvesterlau')
 
-    var nav_wrap = $('<div/>').addClass('navWrap')
+
+    var nav_links = $('<div/>').addClass('navWrap')
         .append(work)
-        .append(about)
-        .append(cv)
         .append(blog)
+        .append(about)
+        .append(buyCoffee)
         .append(theme_icon);
 
-    nav.append(logo).append(nav_wrap).append(menu_icon);
-}
+    var nav_text_group = $('<div/>').addClass('navTextGroup').append(logoText).append(nav_links)
 
-function menuIcon() {
-    var menu_icon = $('<div/>').addClass('menu'),
-        rect1 = $('<div/>').addClass('rect').attr('i', 1),
-        rect2 = $('<div/>').addClass('rect').attr('i', 2),
-        rect3 = $('<div/>').addClass('rect').attr('i', 3),
-        rect4 = $('<div/>').addClass('rect').attr('i', 4);
-    menu_icon.append(rect1).append(rect2).append(rect3).append(rect4);
-    menu_icon.click(function () {
-        menu_icon.toggleClass('open')
-        $('.navWrap').toggleClass('open');
-    })
-    return menu_icon;
+    nav.append(logoImg).append(nav_text_group);
+
+    //highlight nav links
+    switch (path) {
+        case 'projects':
+            $('a#projects').addClass('highlight');
+            break;
+
+        case 'about':
+            $('a#about').addClass('highlight');
+            break;
+
+        case 'blog':
+            $('a#blog').addClass('highlight');
+            break;
+    }
 }
 
 function themeIcon() {
-    var themeIcon = $('<div/>').addClass('theme-switch');
-    themeIcon.click(function () { closeMenu();switchTheme() })
+    var themeIcon = $('<a/>').addClass('theme-switch');
+    themeIcon.click(function () { switchTheme() })
     return themeIcon;
 }
 
@@ -73,49 +66,17 @@ function switchTheme() {
 function setTheme(theme) {
     if (theme == null || theme == 'light') {
         $('html').attr('data-theme', 'light');
-        $('.theme-switch').removeClass('dark');
+        $('.theme-switch').text('🌚').removeClass('dark');
         localStorage.setItem('theme', 'light')
     }
     else if (theme == 'dark') {
         $('html').attr('data-theme', 'dark');
-        $('.theme-switch').addClass('dark');
+        $('.theme-switch').text('☀️').addClass('dark');
         localStorage.setItem('theme', 'dark')
     }
 }
-
-function closeMenu() {
-    $('.menu').removeClass('open')
-    $('.navWrap').removeClass('open');
-}
-
-function scrollDetect() {
-    var nav = $('nav');
-    $(window).scroll(function () {
-        var before = $(window).scrollTop();
-        $(window).scroll(function () {
-            var after = $(window).scrollTop();
-            if (before <= 0) {
-                nav.removeClass('hide')
-            }
-            else if (before < after) {
-                nav.addClass('hide')
-                before = after;
-            }
-            else if (before > after) {
-                nav.removeClass('hide')
-                before = after;
-            };
-        });
-    });
-}
-// smooth scroll
-function smoothScrollTo(id) {
-    $('html, body').animate({
-        scrollTop: ($(id).offset().top)
-    }, 800);
-}
 //render footer
-function renderFooter(){
-    var footer = $('<footer/>').text('© 2020 sylvesterlau.xyz - All rights reserved.');
+function renderFooter() {
+    var footer = $('<footer/>').text('Hand made with 💛 by sylvester lau. All rights reserved ©2021');
     $('body').append(footer);
 }

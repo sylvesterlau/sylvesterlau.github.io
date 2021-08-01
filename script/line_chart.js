@@ -18,63 +18,7 @@ function getDataPercent(data) {
 const percentBefore = getDataPercent(dataBefore),
     percentAfter = getDataPercent(dataAfter);
 
-var ctx1 = document.getElementById('uba1').getContext('2d'),
-    ctx2 = document.getElementById('uba2').getContext('2d');
-var ubaChart1 = new Chart(ctx1, {
-    type: 'line',
-    data: {
-        labels: ['Enter', 'Menu', 'Browse Cart', 'Bill', 'Creat Order', 'Purchase', 'Complete'],
-        datasets: [
-            {
-                //line Chart before
-                label: 'June',
-                backgroundColor: 'rgba(255, 221, 4, 0.3)',
-                borderColor: orange,
-                borderWidth: 4,
-                lineTension: .2,
-                //point style
-                pointBackgroundColor: orange,
-                pointHoverBackgroundColor: orange,
-                pointRadius: 3,
-                pointHoverRadius: 6,
-                //data
-                data: percentBefore,
-            }]
-    },
-    options: {
-        responsive: true, maintainAspectRatio: false,
-        title: {
-            display: true,
-            text: 'User Retention (Jun. 18-30, 2018)',
-            fontSize: 18,
-        },
-        tooltips: {
-            callbacks: {
-                titleFontSize: 16,
-                bodyFontSize: 16,
-                label: function (tooltipItems, data) {
-                    var label = data.datasets[tooltipItems.datasetIndex].label || '';
-
-                    if (label) {
-                        label += ': ';
-                    }
-                    label += tooltipItems.yLabel + '%';
-                    return label;
-                }
-            }
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    callback: function (value, index, values) {
-                        return value + '%';
-                    }
-                }
-            }]
-        }
-    }
-});
+var ctx2 = document.getElementById('uba2').getContext('2d');
 
 var ubaChart2 = new Chart(ctx2, {
     type: 'line',
