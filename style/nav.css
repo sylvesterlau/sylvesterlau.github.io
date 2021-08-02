@@ -100,7 +100,6 @@ a.theme-switch {
 @media only screen and (min-width: 768px) {
     nav {
         height: 96px;
-        padding: 16px 0;
         justify-content: center;
         position: sticky;
     }
@@ -112,11 +111,13 @@ a.theme-switch {
     }
     .navTextGroup {
         margin-left: 16px;
-        width: calc(100% - 80px);
-        max-width: 920px;
+        width: calc(100% - 120px);
+        max-width: 960px;
+    }
+    nav .logo-img {
+        margin-top: 16px;
     }
     nav .logo-text {
-        margin: 0;
         display: block;
     }
     nav .navWrap {
