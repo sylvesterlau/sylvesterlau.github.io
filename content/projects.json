@@ -6,8 +6,8 @@
             "year": 2021,
             "tag": "Student Project",
             "keyword": "Human-robot interaction",
-            "img": "./assets/work-cover/cover-moley-robotics.jpg",
-            "video": "./assets/work-cover/cover-moley.mp4",
+            "img": "./assets/moley/cover-moley.jpg",
+            "video": "./assets/moley/cover-moley.mp4",
             "href": "./project/moley-robotics.html"
         },
         {
@@ -16,8 +16,8 @@
             "year": 2021,
             "tag": "Student Project",
             "keyword": "VR",
-            "img": "./assets/work-cover/cover-vam.jpg",
-            "video": "",
+            "img": "./assets/vam/cover-vam.jpg",
+            "video": "./assets/vam/cover-vam.mp4",
             "href": "./project/v&a-silk-road.html"
         },
         {
@@ -26,8 +26,8 @@
             "year": 2019,
             "tag": "Side Project",
             "keyword": "Data Visaulisation",
-            "img": "./assets/work-cover/cover-fb.jpg",
-            "video": "./assets/work-cover/fb.mp4",
+            "img": "./assets/fb/cover-fb.jpg",
+            "video": "./assets/fb/cover-fb.mp4",
             "href": "./project/filter-bubble.html"
         },
         {
@@ -36,8 +36,8 @@
             "year": 2019,
             "tag": "Retail",
             "keyword": "Design System",
-            "img": "./assets/work-cover/cover-kf.jpg",
-            "video": "./assets/work-cover/kf.mp4",
+            "img": "./assets/kf-order/cover-kf.jpg",
+            "video": "./assets/kf-order/cover-kf.mp4",
             "href": "./project/kf-order.html"
         },
         {
@@ -46,8 +46,8 @@
             "year": 2019,
             "tag": "Education",
             "keyword": "Micro Learning",
-            "img": "./assets/work-cover/cover-refuel.jpg",
-            "video": "./assets/work-cover/refuel.mp4",
+            "img": "./assets/refuel/cover-refuel.jpg",
+            "video": "./assets/refuel/cover-refuel.mp4",
             "href": "./project/refuel.html"
         },
         {
@@ -56,8 +56,8 @@
             "year": 2019,
             "tag": "Side Project",
             "keyword": "Wearable Interface",
-            "img": "./assets/work-cover/cover-timelapse.jpg",
-            "video": "./assets/work-cover/timelapse.mp4",
+            "img": "./assets/timelapse/cover-timelapse.jpg",
+            "video": "./assets/timelapse/cover-timelapse.mp4",
             "href": "./project/timelapse.html"
         }
     ]

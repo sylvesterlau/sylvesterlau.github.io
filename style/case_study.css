@@ -86,6 +86,9 @@ figure.m {
     display: grid;
     row-gap: 40px;
 }
+.col-2>figure {
+    margin: 0;
+}
 
 /* 3 column image */
 
@@ -214,7 +217,7 @@ iframe.fb-demo {
 figure.youtube, iframe.youtube {
     width: 100%;
     --content-width: calc(100vw - 48px);
-    height: min(var(--content-width), 400px);
+    height: calc(var(--content-width)/16*9);
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,6 +271,7 @@ figure.youtube, iframe.youtube {
     figure.youtube, iframe.youtube {
         --content-width: calc(100vw - 128px);
         height: calc(var(--content-width)/16*9);
+        max-height: 562.6px;
     }
 }
 

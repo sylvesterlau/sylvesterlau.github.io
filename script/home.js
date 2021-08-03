@@ -7,7 +7,7 @@ $(document).ready(function () {
 function renderWork(a) {
     var img = $('<img/>').attr('src', a.img),
         videoSource = $('<source/>').attr('src', a.video),
-        video = $('<video autoplay loop/>').append(videoSource),
+        video = $('<video autoplay mute playsinline loop/>').append(videoSource),
         wrap = $('<div/>').addClass('img-wrap')
             .append(img).append(video),
         arrow = '<span class="arrow"> →</span>',
@@ -26,6 +26,7 @@ function renderWork(a) {
 
 function play(a) {
     var video = $(a).children('.img-wrap').children('video').get(0);
+    video.muted = true;
     video.play();
 }
 function stop(a) {
