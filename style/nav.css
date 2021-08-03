@@ -84,6 +84,7 @@ nav .logo-img {
     border-radius: 50%;
     transition: all 200ms ease-in-out;
     cursor: pointer;
+    background-color: #F7F7F7;
 }
 
 .logo-img:hover {
