@@ -31,6 +31,10 @@ nav {
     transform: translateZ(10px);
 }
 
+html[data-theme='dark'] .img-me {
+    background-image: url(../assets/me-2.jpg);
+}
+
 .img-box .circle {
     transform-style: preserve-3d;
     animation: spining3d 10s linear infinite;
