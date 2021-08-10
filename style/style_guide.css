@@ -19,7 +19,7 @@ html[data-theme='light'] {
     --bg-color: #F7F7F7;
     --text-color-primary: #333;
     --text-color-secondary: #8d8d8d;
-    --text-color-p: #535353;
+    --text-color-p: #5a5a5a;
 }
 
 html[data-theme='dark'], section.dark {
@@ -157,7 +157,7 @@ ol, ul {
     body {
         --page-margin: 64px;
         --column-gap: 30px;
-        --section-gap: 64px;
+        --section-gap: 80px;
     }
     /* font */
     h1 {

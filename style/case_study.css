@@ -10,6 +10,10 @@ html[case='refuel'] {
     --section-dark: #3C3A4E;
 }
 
+html[case='moley'], html[case='vam'] {
+    --section-dark: #0c0c0c;
+}
+
 html[case='timelapse'] {
     --title-img: url(../assets/timelapse/header.png);
 }
@@ -162,6 +166,7 @@ figure.m {
 
 iframe.fb-demo {
     display: none;
+    overflow: hidden;
 }
 
 .topBtn {
@@ -233,13 +238,13 @@ figure.youtube, iframe.youtube {
     .col-3 {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 40px;
-        margin: 40px 0;
+        margin: 64px 0;
     }
     .col-2 {
         grid-template-columns: 1fr 1fr;
         column-gap: 24px;
         row-gap: 24px;
-        margin: 40px 0;
+        margin: 64px 0;
     }
     .col-2>* {
         margin: 0 !important;
@@ -267,6 +272,9 @@ figure.youtube, iframe.youtube {
         width: 44px;
         right: 40px;
         bottom: 32px;
+    }
+    figure {
+        margin: 64px 0;
     }
     figure.youtube, iframe.youtube {
         --content-width: calc(100vw - 128px);
