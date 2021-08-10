@@ -49,12 +49,17 @@ section.dark {
 
 section.brown {
     background: var(--section-brown);
+    --text-color-primary: #333;
+    --text-color-secondary: #8d8d8d;
+    --text-color-p: #5a5a5a;
 }
 
 section.khaki {
     background: var(--section-khaki);
+    --text-color-primary: #333;
+    --text-color-secondary: #8d8d8d;
+    --text-color-p: #5a5a5a;
 }
-
 
 /* title */
 
