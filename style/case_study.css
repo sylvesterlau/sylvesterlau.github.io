@@ -10,8 +10,12 @@ html[case='refuel'] {
     --section-dark: #3C3A4E;
 }
 
-html[case='moley'], html[case='vam'] {
-    --section-dark: #0c0c0c;
+html[case='moley'] {
+    --section-khaki: #fff0dd;
+}
+
+html[case='vam'] {
+    --section-brown: #DFD4D2;
 }
 
 html[case='timelapse'] {
@@ -42,6 +46,15 @@ section {
 section.dark {
     background: var(--section-dark);
 }
+
+section.brown {
+    background: var(--section-brown);
+}
+
+section.khaki {
+    background: var(--section-khaki);
+}
+
 
 /* title */
 
