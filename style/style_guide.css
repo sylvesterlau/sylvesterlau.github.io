@@ -30,7 +30,6 @@ html[data-theme='dark'], section.dark {
     --text-color-p: rgba(255, 255, 255, .7);
 }
 
-
 /* footer */
 
 footer {
@@ -65,9 +64,11 @@ p, li {
 p>strong, li>strong {
     font-weight: 700;
 }
-* a{
+
+* a {
     color: inherit;
 }
+
 * a:hover {
     color: #333;
 }
@@ -114,6 +115,7 @@ quote {
     color: var(--text-color-primary);
     margin: 64px 0;
 }
+
 quote::before {
     font-family: "Inconsolata";
     content: "“";
@@ -123,11 +125,12 @@ quote::before {
     position: relative;
     left: -30px;
 }
+
 quote.s {
     font-size: 18px;
     padding: 0 16px;
     margin: 24px 0;
-} 
+}
 
 quote name {
     font-family: "Inconsolata", monospace;
@@ -163,15 +166,13 @@ ol, ul {
     h1 {
         font-size: 48px;
     }
-    
     h2 {
         font-size: 32px;
     }
-    
     h3 {
         font-size: 24px;
     }
-    p,li {
+    p, li {
         font-size: 17px;
     }
     quote {
