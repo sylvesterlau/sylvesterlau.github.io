@@ -25,7 +25,7 @@
             "caption": "Side Project / Interactive / Data Visualization",
             "year": 2019,
             "tag": "Side Project",
-            "keyword": "Data Visaulisation",
+            "keyword": "Data Visualization",
             "img": "./assets/fb/cover-fb.jpg",
             "video": "./assets/fb/cover-fb.mp4",
             "href": "./project/filter-bubble.html"
