@@ -1,7 +1,12 @@
 $(document).ready(function () {
+    if (localStorage.getItem('lang') == 'zh') {
+        $.getJSON('./content/projects.json', function (data) {
+            $.each(data.projectsCN, function () { renderWork(this) });
+        })
+    } else {
     $.getJSON('./content/projects.json', function (data) {
         $.each(data.projects, function () { renderWork(this) });
-    })
+    })}
 })
 
 function renderWork(a) {
@@ -12,7 +17,7 @@ function renderWork(a) {
             .append(img).append(video),
         arrow = '<span class="arrow"> →</span>',
         title = $('<h3/>').append(a.title + arrow),
-        caption = $('<p/>').append(a.year + "<span> / </span>" + a.tag + "<span> / </span>" + a.keyword);
+        caption = $('<p/>').append(a.caption);
     var workCover = $('<a/>').addClass('work')
         .attr('href', a.href)
         .append(wrap)

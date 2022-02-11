@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" path='projects' case='vam'>
+<html path='projects' case='vam'>
 
 <head>
     <meta charset="UTF-8">
@@ -30,9 +30,126 @@
 <body>
     <div id="loading"><div class="spinner"></div></div>
     <nav></nav>
+    <div class="content" lang="zh">
+        <section class="title">
+            <h1>V&A’s Silk Road: Asia</h1>
+            <h2>V&A 博物馆的线上游览体验</h2>
+        </section>
+        <img src="../assets/vam/title-image-vam.jpg" class="title-img"></img>
+        <section class="overview">
+            <h2>项目介绍</h2>
+            <div>
+                <p>在伦敦艺术大学用户体验设计硕士课程中，我们为 V&A 博物馆设计在线浏览体验。最终，我们团队以「海上丝绸之路」为背景，制作了一个可互动的 VR 展览，<strong>「Silk Road: Asia」</strong>，帮助疫情下的参观者以游戏化的方式更好地了解展品的故事。此项目亦希望提升亚洲文化在西方博物馆行业的地位，并提出一种去中心化的策展和观展方式。</p>
+                <p class="link-list">
+                    <a href="https://blog.sylvesterlau.com/tags/macro-ux" target="_blank">项目过程 blog</a>
+                    <a href="https://sylvesterlau.com/blog/assets/essay/designing-situated-improvisation.pdf" target="_blank">课程论文：Designing Situated Improvisation</a>
+                </p>
+            </div>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <p><strong>硕士课程项目 / 2021</strong></p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>担任角色</strong></p>
+                    <p>用户体验设计师（硕士学生）</p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>合作方</strong></p>
+                    <p><a href="https://www.vam.ac.uk" target="_blank">Victoria and Albert Museum, London</a></p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>团队成员</strong></p>
+                    <p>Sanya Nayar<br>Shiwen (Svaney) Shen<br>Ziyou (Ines) Yin</p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>关键词</strong></p>
+                    <p>博物馆，Mozilla Hub，VR，叙事设计</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>「威廉·莫里斯难题」</h2>
+            <p>工艺美术运动的领导者威廉·莫里斯（William Morris）的作品是 V&A 博物馆的标志藏品。他的经典花卉装饰不仅出现在家具和壁纸上，更影响了不同时期的绘画、书籍和工艺品设计。博物馆的设计总监<a href="http://jackcraig.com" target="_blank">Jack Craig</a>借此提出他们遇到的「威廉·莫里斯难题」：面对规模庞大的展品，如何帮助线上用户更好地导览和建立联系？</p>
+            <figure>
+                <img src="../assets/vam/willam-morris-problem.jpg" alt="">
+                <figcaption>The “William Morris Problem”: matching online visitor’s flow with the collection database</figcaption>
+            </figure>
+            <quote class="center">Someone interested in William Morris will likely come across relevant objects, books, events, and merchandise scattered over numerous databases and webpages...<br><name>Jack Craig, the digital design lead at V&A</name></quote>
+            <p class="center">另一方面，这个项目在英国新冠疫情封锁时期进行，教育机构和博物馆完全转为线上，我们与参观者都无法接触藏品和展厅。在这个巨大的挑战下，行业越发注重数字化发展，而我们也将设计方向从传统展览转向游戏化和叙事性的体验。</p>
+        </section>
+        <section>
+            <h2>屏幕以外的体验设计</h2>
+            <p>我们参考其他线上展览汲取灵感，尝试<strong>数字本位（digital native）</strong>的思维加强游览者的参与感。线上展品与实体展品有什么本质区别？除了单纯的数字建模，如何发挥虚拟展览的优势？我们尝试打破以往展品与观众的距离，运用 <a href="https://processing.org">Processing</a>、摄像头肢体检测和动效设计来建立互动关系。</p>
+            <div class="col-2">
+                <div>
+                    <video src="../assets/vam/experiment-2.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>用「火炬」探索绘画作品</figcaption>
+                </div>
+                <div>
+                    <video src="../assets/vam/experiment-3.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>肢体探测，与武士刀展品互动</figcaption>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>叙事化场景——海上丝绸之路</h2>
+            <p>通过持续的测试和反馈，我们发现可互动的展品能加强参与感，达到更好的教育效果。但是，用户需要更加连贯的故事背景来建立物品之间的联系。由于团队成员都来自亚洲，所以我们决定借此契机表达文化自信，将历史项目的主题定为<strong>海上丝绸之路</strong>。</p>
+            <figure>
+                <img src="../assets/vam/silk-road-objects-map.jpg" alt="">
+                <figcaption>V&A 博物馆的东亚、东南亚地区藏品和地图</figcaption>
+            </figure>
+        </section>
+        <section class="brown">
+            <h1>Silk Road: Asia</h1>
+            <p>项目的成果是一个托管在 Mozilla Hubs 开源平台上的 VR 虚拟空间。开始前，参观者可以选择游客、学者或商人等角色，进行角色定制。接着就进入 VR 体验，根着游戏提示地图游览岛屿上的建筑，也可以自由探索。地图上放置了很多 V&A 的展品 3D 模型，而且结合对应运动检测、<strong><a href="https://hubs.mozilla.com/docs/spoke-adding-scene-content.html#audio-zones">空间音频</a></strong>和 <strong><a href="https://developer.apple.com/augmented-reality/arkit/">Apple AR Kit</a></strong>进行展示，让大家了解这些文化遗产后的历史知识。</p>
+            <figure class="youtube">
+                <iframe class = "youtube" src="//player.bilibili.com/player.html?bvid=BV1Ur4y1v7wZ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                <figcaption>V&A’s Silk Road: Asia journey video</figcaption>
+            </figure>
+            <div class="col-2">
+                <figure>
+                    <video src="../assets/vam/ar-vase.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>AR 清代花瓶</figcaption>
+                </figure>
+                <figure>
+                    <video src="../assets/vam/packing-object.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>扮演丝绸之路商人，将商品带到下一个目的地</figcaption>
+                </figure>
+                <figure>
+                    <video src="../assets/vam/bayan-drum.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>印度 Bayan 鼓</figcaption>
+                </figure>
+                <figure>
+                    <video src="../assets/vam/object-info.mp4" autoplay loop muted playsinline></video>
+                    <figcaption>探索地图时浏览展品信息</figcaption>
+                </figure>
+            </div> 
+            <div class="col-2">
+                <div>
+                    <h3>旅程仍将继续...</h3>
+                    <p>文化碰撞和交流是丝绸之路不可或缺的部分，同时也呼应了博物馆承载的功能。在这个虚拟的社区里，参观者可以选择喜爱的物品，带到下一个国家，自己成为「策展人」。我们希望这个项目不仅是 V&A 博物馆的展览，更是所有参与者的共同创作。</p>
+                </div>
+                <figure>
+                    <img src="../assets/vam/silk-road-map.jpg" alt="">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2>项目反馈和思考</h2>
+            <p>在 10 多位参与测试的用户里，大部分人表示这个项目相比传统展览带来更高的沉浸感和参与感，同时也期待地图规模和视觉设计能进一步提升。一些博物馆从业人员也认为项目可以作为实地参观的补充，打开了线上展览的想象空间。 </p>
+            <div class="col-3">
+            <quote class="s">You moved from a mere imitation of a gallery and examined ‘what experience we’re not going to see in a physical museum’.<br><name>Jack Craig, Digital Design Lead at V&A</name></quote>
+            <quote class="s">与多种技术的结合是一个大胆的尝试，尤其在学生项目里。这些思路给了我很大启发，相信有机会可以应用到实际展览行业里。<br><name>Dasiy，博物馆与展览行业创业者</name></quote>
+            <quote class="s">相比传统展览，我感觉更沉浸到故事里。互动物品非常的有趣，如果能进一步完善可以达到更好的教育目的。 <br><name>Huan Huan Tang, 测试用户</name></quote>
+            </div>
+           <p>在这个短期项目，我们遇到了很多技术和资源限制。尽管最终成果稍显粗糙，这个项目仍体现了我们对虚拟博物馆的思考，探索将共创、去中心化和社区属性带入传统展览，是一次有意义的尝试。</p>
+           <p>p.s. Many thanks to Jack (V&A), John and Al (Tutors) and my teammates Ines, Svaney and Sanya, who started this experimental voyage with me.</p>
+        </section>
+    </div>
+    <div class="content" lang="en">
     <section class="title">
         <h1>V&A’s Silk Road: Asia</h1>
-        <h3>An virtual tour experience for V&A Museum’s online collections</h3>
+        <h2>An virtual tour experience for V&A Museum’s online collections</h2>
     </section>
     <img src="../assets/vam/title-image-vam.jpg" class="title-img"></img>
     <section class="overview">
@@ -81,11 +198,7 @@
     <section>
         <h2>Reaching through the glass</h2>
         <p>Inspired by some captivating online exhibitions, our group sampled several interactions with V&A’s items to intensify visitor engagement. These fun experiments revealed a <strong>digital-native</strong> mindset inquiry: What <strong>differentiates</strong> a virtual object or exhibition from a physical one? How can we treat this project <strong>beyond digital replicating</strong>?  We carried <a href="https://processing.org">Processing</a>, webcam body-detecting and animation to build a coherent journey tackling the “William Morris Probelm” in the <a href="https://www.vam.ac.uk/articles/samurai-japanese-arms-armour">Japanese Samurai collections. </a></p>
-        <div class="col-3">
-            <div>
-                <video src="../assets/vam/experiment-1.mp4" autoplay loop muted playsinline></video>
-                <figcaption>Colour detection to navigate Samurai swords</figcaption>
-            </div>
+        <div class="col-2">
             <div>
                 <video src="../assets/vam/experiment-2.mp4" autoplay loop muted playsinline></video>
                 <figcaption>Using a “torch” to explore the Samurai painting</figcaption>
@@ -143,7 +256,6 @@
                 <p>Players can sail to the following country and exchange items and culture there. We imagined that the virtual Silk Road journey would last, with our six-week project evoking offset. The complete Silk Road network wouldn’t exist without the contribution of multi-players and culture exchange. Assisted by the massive splendid collections from the V&A Museum, the design could act as curation and community for displaying objects and communication.</p>
             </div>
         </div>
-    </div>
     </section>
     <section>
         <h2>Project Feedback</h2>
@@ -156,8 +268,9 @@
        <p>I appreciate our concept attempts to challenge conventional museum settings by integrating a collaborative generative experience. We faced many technical and resource limitations in this short project, making it unpolished but still inventive. </p>
        <p>p.s. Many thanks to Jack (V&A), John and Al (Tutors) and my teammates Ines, Svaney and Sanya, who started this experimental voyage with me.</p>
     </section>
+    </div>
 
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../script/pageSetUp.js"></script>
     <script src="../script/casestudy.js"></script>
 </body>

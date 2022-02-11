@@ -1,14 +1,13 @@
 /* fonts import */
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     transition: all 300ms ease-in-out;
-    --font-mono: "Inconsolata", monospace;
-    --font-serif: 'Merriweather', serif;
+    --font-mono: "Inconsolata", monospace, "PingFang SC", "Noto Sans SC";
     color: var(--text-color-primary);
     --text-color-highlight: #333;
     --highlight-color: #EDF911;
@@ -19,7 +18,7 @@ html[data-theme='light'] {
     --bg-color: #F7F7F7;
     --text-color-primary: #333;
     --text-color-secondary: #8d8d8d;
-    --text-color-p: #5a5a5a;
+    --text-color-p: #595959;
 }
 
 html[data-theme='dark'], section.dark {
@@ -28,6 +27,14 @@ html[data-theme='dark'], section.dark {
     --text-color-primary: rgba(255, 255, 255, .9);
     --text-color-secondary: rgba(255, 255, 255, .55);
     --text-color-p: rgba(255, 255, 255, .7);
+}
+
+html[lang='zh'] *[lang='en'] {
+    display: none;
+}
+
+html[lang='en'] *[lang='zh'] {
+    display: none;
 }
 
 /* footer */
@@ -44,7 +51,7 @@ footer {
 /* gap */
 
 body {
-    --page-margin: 24px;
+    --page-margin: 32px;
     --column-gap: 24px;
     --section-gap: 64px;
     background: var(--bg-color);
@@ -98,7 +105,7 @@ h3 {
 
 figcaption {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 160%;
     color: var(--text-color-secondary);
     margin-top: 0.5em;
@@ -107,8 +114,8 @@ figcaption {
 
 quote {
     display: block;
-    font-family: var(--font-serif);
-    font-style: italic;
+    font-family: var(--font-mono);
+    /* font-style: italic; */
     font-weight: 400;
     font-size: 22px;
     line-height: 150%;
@@ -164,16 +171,10 @@ ol, ul {
     }
     /* font */
     h1 {
-        font-size: 48px;
-    }
-    h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
     h3 {
         font-size: 24px;
-    }
-    p, li {
-        font-size: 17px;
     }
     quote {
         font-size: 26px;
@@ -185,6 +186,6 @@ ol, ul {
 
 @media only screen and (min-width: 992px) {
     body {
-        --page-margin: max(calc(50vw - 490px), 96px);
+        --page-margin: max(calc(50vw - 500px), 96px);
     }
 }

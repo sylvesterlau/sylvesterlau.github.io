@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" path='projects' case='moley'>
+<html path='projects' case='moley'>
 
 <head>
     <meta charset="UTF-8">
@@ -32,9 +32,11 @@
 
 <body>
     <nav></nav>
+    <div id="loading"><div class="spinner"></div></div>
+    <div class="content" lang="en">
     <section class="title">
         <h1>Moley Robotics HRI Matrix</h1>
-        <h3>Designing interactions and relations between the robot chef and human guests</h3>
+        <h2>Designing interactions and relations between the robot chef and human guests</h2>
     </section>
     <img src="../assets/moley/cover.jpg" class="title-img"></img>
     <section class="overview">
@@ -144,8 +146,119 @@
         <p class="center">This project echoes a mix of complexity, excitement and playfulness. Human-robot interaction is a sophisticated topic, and very often, people treat it with a technical-centred mindset. I learned a unique perspective on how designers could tackle this problem and other similar subjects by introducing humanity, creativity and collaboration into the rigorous research journey.</p>
         <p class="center">p.s. Special thanks to my team with Ana, Sanjana, Tiana and our tutors John and Al. I enjoyed working with them and learned so much about culture, food, language and design skills!</p>
     </section>
+    </div>
 
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <div class="content" lang="zh">
+        <section class="title">
+            <h1>Moley Robotics 人机互动研究</h1>
+            <h2>机器人厨师与用户的互动研究方法</h2>
+        </section>
+        <img src="../assets/moley/cover.jpg" class="title-img"></img>
+        <section class="overview">
+            <h2>项目介绍</h2>
+            <div>
+                <p>在伦敦艺术大学用户体验设计硕士课程中，我们与世界首个厨房机器人公司 Moley Robotics 合作，探索机器人厨师和用户的互动关系。<br><br>
+                科幻作品对机器人互动的情感和道德有着深度思考和推演，而现实中行业却往往注重功能而忽视其中的复杂性。此项目整合了角色扮演、实体原型、视频分析和推测设计（Speculative Design），最终产出 16 种机器人行为模式以及一套系统性的研究方法。我们希望这个研究方法能应用在呼吁人机互动的设计和评估阶段，呼吁业重新审视机器人在生活中扮演的角色。</p>
+                <p class="link-list">
+                    <a href="https://blog.sylvesterlau.com/tags/micro-ux" target="_blank">项目过程 blog</a>
+                    <a href="https://sylvesterlau.com/blog/assets/essay/anthropomorphic-design.pdf" target="_blank">课程论文：对拟人化设计的批判性思考（英文）</a>
+                </p>
+            </div>
+            <div class="meta-info">
+                <div class="meta-item">
+                    <p><strong>课程项目 / 2021</strong></p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>担任角色</strong></p>
+                    <p>用户体验设计师（硕士学生）</p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>合作方</strong></p>
+                    <p><a href="https://moley.com" target="_blank">Moley Robotics</a></p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>团队成员</strong></p>
+                    <p>Ana Garcia Villanueva<br>Sanjana Mehta<br>Tiana Robison Randriaharimalala</p>
+                </div>
+                <div class="meta-item">
+                    <p><strong>关键词</strong></p>
+                    <p>Human-robot Interaction，Body storming，情感化设计，研究方法</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            
+            <h2>Body storming 机器人扮演</h2>
+            <p>新冠疫情对全球的公司和学校带来巨大挑战，此时我们几乎无法实地接触 Moley Robotics 的机器人。另一方面，这个机密性的预售产品也缺乏现有用户和相关研究。<strong>在诸多限制下我们如何为一个先进的烹饪机器人做互动设计呢？</strong></p>
+            <figure>
+                <img src="../assets/moley/moley-robot.jpg" alt="moley cooking robot" class="m">
+                <figcaption>Moley Cooking Robot live demo. Source: <a href="https://moley.com" target="_blank">Moley Robotics.</a></figcaption>
+            </figure> 
+            <figure>
+                <img src="../assets/moley/video-analysis.jpg" alt="">
+                <figcaption>Body-storming and video analysis.</figcaption>
+            </figure>
+            <p>我们首先对自己的日常做饭流程，包括食材准备、烹饪、就餐到清洁，进行研究分析。整个过程中，厨师、食客朋友甚至厨具之间充斥着丰富的互动和情感交流。对比之下，应用了 Moley Robotics 及其他厨房机器人的场景则缺乏亲密性和情感互动。</p>
+            <quote>加入了机器人之后，厨房感觉不再是一个社交的空间了...<br><name>Body storming 参与者评价</name></quote>
+            <p>我们运用了 body storming 方法让参与者在不同情景中扮演厨房机器人和用户。以现有的设定，“机器人”的加入主导了家庭厨房的交流模式，其严格的程序逻辑让烹饪过程变得乏味而缺少趣味。</p>
+        </section>  
+        <section class="khaki">
+            <h2>场景搭建与角色扮演</h2>
+            <p>为了进一步提升角色扮演研究，我们重新搭建了更高保真的场景和道具，最终呈现出一个 1:1 的迷你厨房，并将机器人厨师的方向调整为面向用户，让产品最有优势的机器手可以承载更多互动。我们用这个场景继续设计、测试了多个脚本，并邀请不同的参与者共同演绎，逐渐探索出人机互动矩阵的框架。</p>
+            <figure>
+                <img src="../assets/moley/human-robot-cooking.jpg" alt="">
+                <figcaption>Direct hand-to-hand interactions.</figcaption>
+            </figure>
+            <div class="col-2">
+                <figure>
+                    <img src="../assets/moley/kitchen.jpg" alt="">
+                    <figcaption>A 1:1 scale mini kitchen prototype.</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/moley/robot-hands.jpg" alt="">
+                    <figcaption>The “robotic” arms facing the guests, hoping to evoke a more friendly, intimated impression.</figcaption>
+                </figure>                
+            </div>
+        </section>
+        <section class="khaki">
+            <h2>机器人互动矩阵</h2>
+            <p>这种研究方法旨在为设计师提供一种创造机器、界面和设备与人之间互动的框架。其中包括物理互动（physical interaction）和社会关系（social interaction）两个轴，每个轴又分为从低到高 4 个级别。一共 16 种行为模式涵盖了从「极少互动」到「非常亲密」的人机关系，并搭配对应的脚本和视频以供 Moley Robotics 的工程师参考和评估。</p>
+            <div class="col-2">
+            <figure>
+                <img src="../assets/moley/machine-catagorising.jpg" alt="Human-robot physical interactions and social relations.">
+                <figcaption>Human-robot physical interactions and social relations.</figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/moley/human-robot-matrix.jpg" alt="Four quarants matrix.">
+                <figcaption>Four quarants matrix.</figcaption>
+            </figure>
+            </div>
+            <figure>
+                <img src="../assets/moley/human-robot-matrix-2.jpg" alt="Final outcome: Human-robot physical interactions and social relations.">
+                <figcaption>Final outcome: Human-robot physical interactions and social relations.</figcaption>
+            </figure>
+            
+            <figure class="youtube">
+                <iframe class="youtube" src="//player.bilibili.com/player.html?bvid=BV1T44y1L71h&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen> </iframe>
+                <figcaption>Video: Human-Robot Interaction Matrix</figcaption>
+            </figure>
+        </section>
+        <section>
+            <div class="center">
+            <h2>项目反馈与思考</h2>
+            <p>最终，我们将这个研究方法和 16 种互动模式整理成网站和小册子，交付给 Moley Robotics。开发主管 James Taylor 认为这个项目打破了固有的人机互动讨论范式，很好地强调了场景和情感的重要性，对公司甚至整个行业提出了新的研究方向。</p>
+            <figure>
+                <img src="../assets/moley/robot-booklet.jpg" alt="Moley Robot and the booklet">
+                <figcaption>Moley Robot and the booklet</figcaption>
+            </figure>
+            <quote>I haven’t seen anyone in the industry is doing this at the moment. Some of the demos are great for the office to think about robot engagement in actual scenarios...and the booklet is amazing.  <br><name>– James Taylor, Development Chef at Moley Robotics</name></quote>
+            </div>
+            <p class="center">人与机器人的互动有着超越技术的复杂性，我很庆幸在此项目中能以一个全新的视角来审视这一主题，并将严谨的学术框架与趣味结合。希望之后能将情感化、人性化和创造力的研究过程带到更多技术导向的项目设计中。</p>
+            <p class="center">p.s. 特别感谢团队成员 Ana，Sanjana，Tiana 和导师 John，Al，我在文化、食物、语言和设计技巧方面学到了很多。</p>
+        </section>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../script/pageSetUp.js"></script>
     <script src="../script/casestudy.js"></script>
 </body>

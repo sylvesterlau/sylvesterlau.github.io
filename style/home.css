@@ -60,7 +60,11 @@ body {
 }
 
 .work:hover video {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .16);
+}
+
+.work:hover p {
+    opacity: 1;
 }
 
 .work:hover h3 .arrow {

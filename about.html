@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" path="about">
+<html path="about">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +29,7 @@
 
 <body>
     <nav></nav>
+    <div id="loading"><div class="spinner"></div></div>
     <div class="content">
         <div class="img-box">
             <div class="img-me"></div>
@@ -36,9 +37,9 @@
         </div>
         <div class="about-text">
             <h3>早晨 Jou San!</h3>
-            <p>I’m <b>jinsong liu</b> (or <b>sylvester lau</b>), a he/him from Guangzhou, China, currently studying <strong><a href="https://maux.arts.ac.uk" target="_blank" rel="noopener noreferrer">MA User Experience Design</a></strong> at University of the Arts London. Graduated from BE Industrial Design, I worked for 3+ year as a product designer in digital transformation of retail, finance and e-learning. Then I turned to make more exploratory projects. With a continuous interest in the human-technology relationship, I aim to become a multidisciplinary designer who appreciates unexpected outcomes and collaboration with diverse people.
+            <p lang='en'>I’m <b>jinsong liu</b> (or <b>sylvester lau</b>), a he/him from Guangzhou, China, currently studying <strong><a href="https://maux.arts.ac.uk" target="_blank" rel="noopener noreferrer">MA User Experience Design</a></strong> at University of the Arts London. Graduated from BE Industrial Design, I worked for 4 year as a product designer in digital transformation of retail, finance and e-learning. Then I turned to make more exploratory projects. With a continuous interest in the human-technology relationship, I aim to become a multidisciplinary designer who appreciates unexpected outcomes and collaboration with diverse people. <br> <br>Out of work, I also enjoy typography, coffee and rock climbing.
             </p>
-            <p>Out of work, I also enjoy typography, coffee and rock climbing.</p>
+            <p lang='zh'>我是<b>刘劲松（sylvester lau)</b>，一个来自广州的设计师，目前在读伦敦艺术大学<strong><a href="https://maux.arts.ac.uk" target="_blank" rel="noopener noreferrer">用户体验设计专业</a></strong>。我在零售、金融、在线教育方面有 4 年产品设计经验，也会做一些探索项目，对人与科技的关系有着长期思考和热情，正努力成为一个全栈设计师。<br> <br>工作之余，我还是字体、咖啡和攀岩爱好者。</p>
 
             <div class="social-link">
                 <p>Email <a href="mailto:sylvester.lau@outlook.com" class="social">sylvester.lau@outlook.com</a></p>
@@ -46,17 +47,21 @@
                 <p>Instagram <a href="https://www.instagram.com/sleepy.sylv/" target="_blank" rel="noopener noreferrer" class="social">@sleepy.sylv</a></p>
                 <p>Github <a href="https://github.com/sylvesterlau" target="_blank" rel="noopener noreferrer" class="social">@sylvesterlau</a></p>
             </div>
-            <div class="button-group">
+            <div class="button-group" lang="en">
                 <a href="https://read.cv/sylvesterlau" target="_blank" rel="noopener noreferrer" class="button">View CV</a>
                 <a href="https://www.buymeacoffee.com/sylvesterlau" target="_blank" rel="noopener noreferrer" class="button">Buy me a Coffee!</a>
             </div>
-            <h3>This website</h3>
-            <p>This simple (and buggy) website is hand-crafted by me, built primarily in HTML, JQuery and hosted by Github. Coding, like anything else, could be a design skill. And I like to keep my hands dirty.</p>
+            <div class="button-group" lang="zh">
+                <a href="https://read.cv/sylvesterlau" target="_blank" rel="noopener noreferrer" class="button">查看简历</a>
+                <a href="https://www.buymeacoffee.com/sylvesterlau" target="_blank" rel="noopener noreferrer" class="button">请我喝杯咖啡</a>
+            </div>
+            <p lang="en">This simple (and buggy) website is hand-crafted by me, built primarily in HTML, JQuery and hosted by Github. Coding, like anything else, could be a design skill. And I like to keep my hands dirty.</p>
+            <p lang="zh">本站由 HTML，JQeury 实现，托管于 Github。我相信编程也可以是设计技能。</p>
         </div>
     </div>
     <footer></footer>
 
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="./script/pageSetUp.js"></script>
     <script> Splitting(); </script>

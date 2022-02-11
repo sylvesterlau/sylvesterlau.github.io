@@ -35,6 +35,13 @@ body {
     background: var(--bg-color);
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 section {
     width: 100%;
     box-sizing: border-box;
@@ -67,7 +74,7 @@ section.title {
     width: 100%;
 }
 
-section.title h3 {
+section.title h2 {
     color: var(--text-color-secondary);
     font-weight: 400;
 }
@@ -104,18 +111,13 @@ figure.m {
 /* 2 column */
 
 .col-2 {
-    margin: 40px 0;
     display: grid;
     row-gap: 40px;
-}
-.col-2>figure {
-    margin: 0;
 }
 
 /* 3 column image */
 
 .col-3 {
-    margin: 24px 0;
     display: grid;
     row-gap: 40px;
 }
@@ -244,10 +246,17 @@ figure.youtube, iframe.youtube {
 }
 
 @media only screen and (min-width: 768px) {
+    section.title {
+        padding-top: 64px;
+        padding-bottom: 32px;
+    }
     .overview {
         display: grid;
         grid-template-columns: auto auto;
         column-gap: 40px;
+    }
+    .meta-info {
+        width: 300px;
     }
     /* column wide narrow */
     section.overview>h2, section.overview>h3 {
@@ -256,13 +265,12 @@ figure.youtube, iframe.youtube {
     .col-3 {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 40px;
-        margin: 64px 0;
     }
     .col-2 {
         grid-template-columns: 1fr 1fr;
         column-gap: 24px;
         row-gap: 24px;
-        margin: 64px 0;
+        margin: 40px 0;
     }
     .col-2>* {
         margin: 0 !important;
@@ -290,9 +298,6 @@ figure.youtube, iframe.youtube {
         width: 44px;
         right: 40px;
         bottom: 32px;
-    }
-    figure {
-        margin: 64px 0;
     }
     figure.youtube, iframe.youtube {
         --content-width: calc(100vw - 128px);
@@ -326,6 +331,7 @@ figure.youtube, iframe.youtube {
         transform: scale(0.766);
         position: relative;
         left: -155px;
+        top: -50px;
         overflow: hidden;
     }
     .demo-place-holder {
