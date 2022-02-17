@@ -105,7 +105,7 @@ var ctx3 = document.getElementById('uba3').getContext('2d');
 var ubaChart3 = new Chart(ctx3, {
     type: 'line',
     data: {
-        labels: ['进入', '菜单', '浏览购物车', 'Bill', '创建订单', '付款', '完成'],
+        labels: ['进入', '菜单', '浏览购物车', '结算', '创建订单', '付款', '完成'],
         datasets: [
             {
                 //line Chart before
