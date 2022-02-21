@@ -40,7 +40,8 @@
         <h2>项目介绍</h2>
         <div>
             <p>我们使用的数字产品和服务几乎都嵌入了个性化推荐算法。这些算法可以根据我们的偏好方便地展示信息，但也可能缩窄视野，强化偏见，导致「信息茧房」（Filter bubble）。这个项目旨在探索如何将「信息茧房」视觉化，希望用互动的形式让大家了解其运作机制，反思自身、媒体与推荐算法的关系。<br><br>
-             <strong><a href="https://www.complexityeducation.com/2021/05/25/ritornotribu/" target="_blank">此项目被 Complexity Education 在 Italian Festival of Complexity 2021 中引用。</a></strong></p>
+             <strong><a href="https://www.complexityeducation.com/2021/05/25/ritornotribu/" target="_blank">🏆 此项目曾被 Italian Festival of Complexity 2021 引用</a></strong></p>
+             <strong><a href="https://github.com/sylvesterlau/bubble-trouble" target="_blank">👾 Open-soured on Github</a></strong>
         </div>
         <div class="meta-info">
             <div class="meta-item">
@@ -151,7 +152,8 @@
             <h2>Overview</h2>
             <div>
                 <p>Nearly every products and service we used had embed personalized algorithm. It selectively presents information based on our preferences and therefore creates “filter bubble”. his experimental project is an exploration to visualize the “filter bubble”, to get us thinking about our relationship with the online media and algorithms. <br><br>
-                <strong><a href="https://www.complexityeducation.com/2021/05/25/ritornotribu/" target="_blank">This project has been cited by Complexity Education in the Italian Festival of Complexity 2021.</a></strong></p>
+                <strong><a href="https://www.complexityeducation.com/2021/05/25/ritornotribu/" target="_blank">🏆 Cited project in Italian Festival of Complexity 2021</a></strong></p>
+                <strong><a href="https://github.com/sylvesterlau/bubble-trouble" target="_blank">👾 Open-soured on Github</a></strong>
             </div>
             <div class="meta-info">
                 <div class="meta-item">
@@ -170,7 +172,7 @@
         <section>
             <h2>How to explain the “Filter Bubble”?</h2>
             <p>Eli Pariser, descripes that personalized algorithms create “a unique universe of information for each of us … which fundamentally alters the way we encounter ideas and information.” My first instinct was to design a product to solve it, but only to find some existing conceptual projects that require massive data processing. However, although those projects are amazingly inspiring, I found them rather incomprehensible for most people around me, especially without explaining what a filter bubble is.<br><br>
-            因此，我决定借用 Nicky Case 的<a href="https://explorabl.es">探索式解释（Explorable Explanations）</a>，用互动游戏化的方式来解释这一复杂的理论，给非学术的受众提供动态、趣味的体验。</p>
+            Therefore, I decided to appropriate Nicky Case's <a href="https://explorabl.es">Explorable Explanations</a> to interactively explain this complex theory, providing a dynamic experience for a non-academic audience.
             <div class="col-3">
                 <figure>
                     <img src="../assets/fb/ted-talk.jpg" alt="ted-talk">
@@ -186,12 +188,12 @@
                 </figure>
             </div>
             <div class="center">
-                <quote>破解信息茧房的第一步是明白它的存在和原理</quote>
+                <quote>The first step to burst the filter bubble is to know how it works.</quote>
             </div>
         </section>
         <section>
-            <h2>故事版与纸质原型</h2>
-            <p>明确目标后，我开始制作体验脚本和纸质原型来测试我的想法。在一次次迭代中，我发现难以将所有细节都解释清楚，而连贯的模型和简单的规则有利于强化受众的理解。最后我采用了契合「filter bubble」隐喻的气泡视图代表用户的信息茧房，不同颜色的点代表信息类型。</p>
+            <h2>Storyboard and Paper Prototype</h2>
+            <p>After clarifying the goal, I started creating scripts and paper prototypes to test my ideas. In one iteration, I found that it was difficult to explain all the details, and that a coherent model and simple rules would help reinforce the audience's understanding. I finally adopted a bubble view that fits the "filter bubble" metaphor to represent the user's information cocoon, with colourful dots representing information types.</p>
                 <figure>
                     <img src="../assets/fb/script.jpg" alt="" class="l">
                     <figcaption>Storyboard of filter bubble explanation</figcaption>
@@ -199,21 +201,21 @@
             <div class="col-3">
                 <figure>
                     <img src="../assets/fb/paper_rule_1.jpg" alt="">
-                    <figcaption>#1 用户点击信息后，将阅读过的信息移出</figcaption>
+                    <figcaption>#1 Move info out after user’s click</figcaption>
                 </figure>
                 <figure>
                     <img src="../assets/fb/paper_rule_2.jpg" alt="">
-                    <figcaption>#2 模拟「相关推荐」，增加两个同类型的信息</figcaption>
+                    <figcaption>#2 Add two info of the same type to simulate “recommendation”</figcaption>
                 </figure>
                 <figure>
                     <img src="../assets/fb/paper_rule_3.jpg" alt="">
-                    <figcaption>#3 最后，随机移出一个其他类型的信息，保持总信息量不变</figcaption>
+                    <figcaption>#3 Randomly remove an info of other type to maintain the total number</figcaption>
                 </figure>
             </div>
         </section>
         <section id="Design" class="dark">
-            <h2>互动编程与视觉设计</h2>
-            <p>在设计与开发阶段，我以阅读新闻为例建立了故事线，并选择了黑色背景和亮色的搭配来呼应 Eli Pariser 关于「信息宇宙」的描述，以颜色区分不同的信息类型。为了达到互动效果，我摸索着学习了 D3.js，一个针对数据可视化的 JavaScript 库，逐渐实现增减节点、模拟引力，最终达到自动运行「长时间接触信息推荐」的模拟效果。</p>
+            <h2>Coding and visual design</h2>
+            <p>I built the storyline with an example of reading news, and combine a black background with bright colours to echo Eli Pariser's description of the 'information universe'. To achieve the interactive effect, I learned <strong>D3.js</strong>, a JavaScript library for data visualisation, to implement nodes, gravity, and eventually running the automated simulation of <strong>“mere exposure effects”</strong>.</p>
             <img src="../assets/fb/coding-browser.png" alt="">
             <div class="col-3">
                 <figure>
@@ -239,17 +241,17 @@
             </div>
         </section>
         <section id="Live_Demo" class="dark">
-            <h2>最终设计 Demo</h2>
-            <p>以下是此项目的最终 Demo，欢迎在电脑端试玩或<a target="_blank"
-                    href="https://sylvesterlau.com/bubble-trouble/">在新标签页打开</a>！</p>
+            <h2>Final Design Demo</h2>
+            <p>Here’s the project demo. Feel free to play around on desktop end or <a target="_blank"
+                    href="https://sylvesterlau.com/bubble-trouble/">open in new tape</a>！</p>
             <iframe src="https://sylvesterlau.com/bubble-trouble/" frameborder="0" class="fb-demo"></iframe>
             <img class="demo-place-holder" src="../assets/fb/demo_place_holder.jpg" alt="">
         </section>
         <section>
-                <h2>总结</h2>
-                <p>这是我的第一个 side project，和工作项目有着明显差别。在项目里最大的挑战是如何找到一个易于理解但模型，并将其转化成故事脚本和可实现的原型。这绝非易事，但通过不断访谈、试错、快速制作原型，我还是找到了满意的方向。探索过程中学到的编程知识，让我有自信尝试更多数据可视化和创意编程的设计。持续寻找效果和能力之间的平衡也锻炼了我对项目中不确定性的把控力。<br><br>
+                <h2>What I learned...</h2>
+                <p>This was my first side project and it was significantly different from a work! The biggest challenge was to find a comprehensible model and translated it into a script and a realizable prototype, which is not an easy task. I was luck to find a satisfactory direction via interviews, making mistakes and rapid prototyping. The coding knowledge I learned gave me the confidence to try more data visualisation and creative coding designs. I also learned how to manage uncertainty from finding a balance between creativity and realisation<br><br>
     
-                非常感谢 Massimo Conte 在 Italian Festival of Complexity 2021 中介绍此项目，希望能为研究设计、媒体、科技的社区带来一点贡献。</p>
+                Many thanks to Massimo Conte for presenting this project at the Italian Festival of Complexity 2021. I hope this could make a small contribution to the research community of design, media and technology.</p>
         </section>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

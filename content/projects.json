@@ -1,6 +1,20 @@
 {
     "projects": [
         {
+            "title": "Kungfu Order",
+            "caption": "2019 / Retail / Service Design",
+            "img": "./assets/kf-order/cover-kf.jpg",
+            "video": "./assets/kf-order/cover-kf.mp4",
+            "href": "./project/kf-order.html"
+        },
+        {
+            "title": "Bubble Trouble",
+            "caption": "2019 / Data Visualization / Web",
+            "img": "./assets/fb/cover-fb.jpg",
+            "video": "./assets/fb/cover-fb.mp4",
+            "href": "./project/filter-bubble.html"
+        },
+        {
             "title": "Moley Robotics HRI Matrix",
             "caption": "2021 / Human-robot interaction / Design Research",
             "img": "./assets/moley/cover-moley.jpg",
@@ -13,20 +27,6 @@
             "img": "./assets/vam/cover-vam.jpg",
             "video": "./assets/vam/cover-vam.mp4",
             "href": "./project/v&a-silk-road.html"
-        },
-        {
-            "title": "Bubble Trouble",
-            "caption": "2019 / Data Visualization / Web",
-            "img": "./assets/fb/cover-fb.jpg",
-            "video": "./assets/fb/cover-fb.mp4",
-            "href": "./project/filter-bubble.html"
-        },
-        {
-            "title": "Kungfu Order",
-            "caption": "2019 / Retail / Service Design",
-            "img": "./assets/kf-order/cover-kf.jpg",
-            "video": "./assets/kf-order/cover-kf.mp4",
-            "href": "./project/kf-order.html"
         },
         {
             "title": "Refuel E-learning",
@@ -48,6 +48,20 @@
     ],
     "projectsCN": [
         {
+            "title": "功夫会",
+            "caption": "2019 / 智慧零售 / 服务设计",
+            "img": "./assets/kf-order/cover-kf.jpg",
+            "video": "./assets/kf-order/cover-kf.mp4",
+            "href": "./project/kf-order.html"
+        },
+        {
+            "title": "Bubble Trouble",
+            "caption": "2019 / 数据可视化 / 可交互网页",
+            "img": "./assets/fb/cover-fb.jpg",
+            "video": "./assets/fb/cover-fb.mp4",
+            "href": "./project/filter-bubble.html"
+        },
+        {
             "title": "Moley Robotics 人机互动研究",
             "caption": "2021 / 机器人互动 / 设计研究",
             "img": "./assets/moley/cover-moley.jpg",
@@ -60,20 +74,6 @@
             "img": "./assets/vam/cover-vam.jpg",
             "video": "./assets/vam/cover-vam.mp4",
             "href": "./project/v&a-silk-road.html"
-        },
-        {
-            "title": "Bubble Trouble",
-            "caption": "2019 / 数据可视化 / 可交互网页",
-            "img": "./assets/fb/cover-fb.jpg",
-            "video": "./assets/fb/cover-fb.mp4",
-            "href": "./project/filter-bubble.html"
-        },
-        {
-            "title": "功夫会",
-            "caption": "2019 / 智慧零售 / 服务设计",
-            "img": "./assets/kf-order/cover-kf.jpg",
-            "video": "./assets/kf-order/cover-kf.mp4",
-            "href": "./project/kf-order.html"
         },
         {
             "title": "Refuel 即能",

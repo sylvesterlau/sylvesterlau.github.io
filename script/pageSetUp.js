@@ -34,7 +34,7 @@ function renderNav() {
         .append(projects)
         .append(blog)
         .append(about)
-        .append(buyCoffee)
+        // .append(buyCoffee)
         .append(lang_btn)
         .append(theme_icon);
 
