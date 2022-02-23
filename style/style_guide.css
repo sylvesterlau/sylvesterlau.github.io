@@ -161,6 +161,32 @@ img, video {
 ol, ul {
     margin-left: 2em;
 }
+.card {
+	position: sticky;
+	padding-top: 24px;
+	padding-bottom: 48px;
+	transition: opacity 0ms;
+}
+
+#cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+
+.card__content {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 2em;
+	column-gap: 1em;
+	grid-template-rows: auto;
+	align-items: center;
+}
+
+.card__content > * {
+	margin: 0;
+}
 
 @media only screen and (min-width: 768px) {
     /* gap */
@@ -182,6 +208,12 @@ ol, ul {
     quote.s {
         margin: 24px 0 64px 0;
     }
+    .card {
+		top: 96px;
+	}
+	.card__content {
+		grid-template-columns: 3fr 1fr;
+	}
 }
 
 @media only screen and (min-width: 992px) {
