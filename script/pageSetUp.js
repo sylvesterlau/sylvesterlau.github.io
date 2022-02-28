@@ -63,7 +63,6 @@ function setSiteLang(){
     var lang = localStorage.getItem('lang');
     if (lang == null) {localStorage.setItem('lang', 'en')}
     $('html').attr('lang', lang);
-    console.log(lang);
     if (lang == 'zh') {
         $('[lang=en]').remove();
     } else  {$('[lang=zh]').remove();}
