@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "title": "Any App Finder",
+            "caption": "2023 / Figma Plugin",
+            "img": "./assets/cover-any-app-finder.jpg",
+            "video": "",
+            "href": "https://www.figma.com/community/plugin/1091985525021410415/Any-App-Finder"
+        },
+        {
             "title": "Kungfu Order",
             "caption": "2019 / Retail / Service Design",
             "img": "./assets/kf-order/cover-kf.jpg",
@@ -47,6 +54,13 @@
         }
     ],
     "projectsCN": [
+        {
+            "title": "Any App Finder",
+            "caption": "2023 / Figma Plugin",
+            "img": "./assets/cover-any-app-finder.jpg",
+            "video": "",
+            "href": "https://www.figma.com/community/plugin/1091985525021410415/Any-App-Finder"
+        },
         {
             "title": "功夫会",
             "caption": "2019 / 智慧零售 / 服务设计",
